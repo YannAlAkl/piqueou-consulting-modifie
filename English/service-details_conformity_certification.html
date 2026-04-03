@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Service Details Conformity Certification - piqueou consulting</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+
+  <!-- service-details_conformity_certification.html Custom Head Code -->
+  .hero {
+  padding-top: 150px;
+  position: relative;
+  background-color: var(--background-color);
+  overflow: hidden;
+  padding-bottom: 120px;
+
+  .hero-content {
+  h2 {
+  font-size: 3.5rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  line-height: 1.2;
+  color: var(--heading-color);
+
+  @media (max-width: 992px) {
+  font-size: 2.5rem;
+  }
+
+  @media (max-width: 768px) {
+  font-size: 2rem;
+  }
+  }
+
+  p {
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+  color: var(--default-color);
+  }
+
+  .hero-btns {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 2.5rem;
+
+  @media (max-width: 576px) {
+  flex-direction: column;
+  }
+
+  .btn {
+  padding: 12px 30px;
+  font-weight: 600;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+  }
+
+  .btn-primary {
+  background-color: var(--accent-color);
+  border-color: var(--accent-color);
+  color: var(--contrast-color);
+
+  &:hover {
+  background-color: color-mix(in srgb, var(--accent-color), #000 10%);
+  border-color: color-mix(in srgb, var(--accent-color), #000 10%);
+  }
+  }
+
+  .btn-outline {
+  background-color: transparent;
+  border: 2px solid var(--accent-color);
+  color: var(--accent-color);
+
+  &:hover {
+  background-color: var(--accent-color);
+  color: var(--contrast-color);
+  }
+  }
+  }
+
+  .hero-stats {
+  display: flex;
+  gap: 2.5rem;
+
+  @media (max-width: 576px) {
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  }
+
+  .stat-item {
+  h3 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--accent-color);
+  margin-bottom: 0.5rem;
+  }
+
+  p {
+  font-size: 0.9rem;
+  margin-bottom: 0;
+  color: var(--default-color);
+  }
+  }
+  }
+  }
+
+  .hero-image {
+  position: relative;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+
+  img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  transition: transform 0.5s ease;
+
+  &:hover {
+  transform: scale(1.03);
+  }
+  }
+  }
+
+  @media (max-width: 992px) {
+  padding: 120px 0 80px 0;
+
+  .hero-content {
+  margin-bottom: 3rem;
+  text-align: center;
+
+  .hero-btns {
+  justify-content: center;
+  }
+
+  .hero-stats {
+  justify-content: center;
+  }
+  }
+  }
+  }
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+</head>
+
+<body class="service-details_conformity_certification-page">
+
+  <header id="header" class="header d-flex align-items-center position-relative">
+    <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="#hero">Accueil</a></li>
+          <li><a href="#about">À propos</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#work-process">Notre Processus</a></li>
+          <li><a href="#consultation">Consultation</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li class="dropdown">
+            <a href="#"><span>Certifications &amp; Compliance</span>
+              <i class="bi bi-chevron-down toggle-dropdown"></i>
+            </a>
+            <ul>
+              <li><a href="#cmmc">CMMC</a></li>
+              <li><a href="#iso27001">ISO 27001</a></li>
+              <li><a href="#soc2">SOC2 Type II</a></li>
+              <li><a href="#nis2">NIS2</a></li>
+              <li><a href="#loi25-gdpr">Loi 25 / GDPR</a></li>
+            </ul>
+          </li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+
+    </div>
+  </header>
+
+  <main class="main">
+
+    <!-- Page Title -->
+    <div class="page-title position-relative" style="background-color: #0f172a; color: #ffffff;">
+
+      <div class="heading">
+        <div class="container">
+          <div class="row d-flex justify-content-center text-center">
+
+            <div class="col-lg-8">
+
+              <h1 style="color: #ffffff;">Conformité et certifications</h1>
+
+              <p class="mb-0">
+                Piqueou accompagne les organisations dans leur démarche de
+                conformité en cybersécurité et gouvernance de l’information.
+                Nous aidons les entreprises à se préparer et à réussir des
+                certifications reconnues telles que CMMC, ISO 27001, SOC 2 Type II,
+                ainsi que la conformité aux réglementations NIS2, Loi 25 et GDPR.
+                Notre approche couvre l’analyse d’écarts, la mise en place des
+                contrôles nécessaires et la préparation complète aux audits.
+              </p>
+
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <!-- Breadcrumbs -->
+      <nav class="breadcrumbs">
+        <div class="container">
+          <ol>
+            <li><a href="index.html" style="color: #ffffff !important;">Accueil</a></li>
+            <li><a href="index.html#services" style="color: #ffffff !important;">Services</a></li>
+            <li class="current" style="color: #ffffff;">Conformité et certifications</li>
+          </ol>
+        </div>
+      </nav>
+
+    </div><!-- End Page Title -->
+
+    <!-- Service Details 4 Section -->
+    <section id="service-details-4" class="service-details-4 section scrollingsections">
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <!-- Service Images Slider -->
+        <div class="service-details-slider swiper init-swiper mb-5">
+          <script type="application/json" class="swiper-config">
+            {
+              "loop": true,
+              "speed": 600,
+              "autoplay": {
+                "delay": 5000
+              },
+              "slidesPerView": "1",
+              "pagination": {
+                "el": ".swiper-pagination",
+                "type": "bullets",
+                "clickable": true
+              },
+              "navigation": {
+                "nextEl": ".swiper-button-next",
+                "prevEl": ".swiper-button-prev"
+              }
+            }
+          </script>
+
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="assets/img/services/services-1.webp" alt="Conformité et certifications - Piqueou" class="img-fluid" loading="lazy">
+            </div>
+            <div class="swiper-slide">
+              <img src="assets/img/services/services-2.webp" alt="Préparation aux audits et conformité - Piqueou" class="img-fluid" loading="lazy">
+            </div>
+            <div class="swiper-slide">
+              <img src="assets/img/services/services-3.webp" alt="Gouvernance et certification en cybersécurité - Piqueou" class="img-fluid" loading="lazy">
+            </div>
+          </div>
+
+          <div class="swiper-pagination"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+        </div>
+        <!-- End Service Images Slider -->
+
+        <div class="row gy-4">
+
+          <!-- Service Content -->
+          <div class="col-lg-8" data-aos="fade-up" data-aos-delay="200">
+            <div class="content">
+
+              <h3>Conformité et certifications</h3>
+
+              <p>
+                Piqueou accompagne les organisations dans leurs démarches de conformité
+                afin de structurer leur gouvernance, réduire leurs risques numériques
+                et réussir leurs audits de certification. Notre approche vise à rendre
+                les exigences normatives concrètes, applicables et adaptées à votre
+                réalité opérationnelle.
+              </p>
+
+              <p>
+                Nous intervenons pour préparer les entreprises aux référentiels et
+                obligations tels que <strong>CMMC, ISO 27001, SOC 2 Type II, NIS2,
+                  Loi 25 et GDPR</strong>. De l’analyse d’écarts à la préparation finale
+                de l’audit, nous bâtissons avec vous une feuille de route claire,
+                documentée et orientée résultats.
+              </p>
+
+              <!-- Key Features -->
+              <h4 class="mt-5 mb-4">Ce que comprend le service</h4>
+              <div class="features">
+
+                <div class="feature-item" data-aos="fade-up" data-aos-delay="100">
+                  <div class="icon">
+                    <i class="bi bi-check-circle"></i>
+                  </div>
+                  <div class="feature-content">
+                    <h5>Analyse d’écarts</h5>
+                    <p>
+                      Évaluation de votre situation actuelle par rapport aux exigences
+                      du cadre ciblé afin d’identifier les écarts prioritaires.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="feature-item" data-aos="fade-up" data-aos-delay="200">
+                  <div class="icon">
+                    <i class="bi bi-check-circle"></i>
+                  </div>
+                  <div class="feature-content">
+                    <h5>Documentation et politiques</h5>
+                    <p>
+                      Structuration des politiques, procédures, registres et preuves
+                      nécessaires pour soutenir la conformité et les audits.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="feature-item" data-aos="fade-up" data-aos-delay="300">
+                  <div class="icon">
+                    <i class="bi bi-check-circle"></i>
+                  </div>
+                  <div class="feature-content">
+                    <h5>Préparation à l’audit</h5>
+                    <p>
+                      Préparation des équipes, consolidation des preuves et accompagnement
+                      jusqu’à l’évaluation officielle ou la revue externe.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Process Steps -->
+              <h4 class="mt-5 mb-4">Notre démarche</h4>
+              <div class="process">
+                <div class="row g-4">
+
+                  <div class="col-md-3" data-aos="fade-up" data-aos-delay="100">
+                    <div class="process-item">
+                      <div class="process-number">01</div>
+                      <h5>Diagnostic</h5>
+                      <p>Analyse du contexte, des obligations et du niveau de maturité</p>
+                    </div>
+                  </div>
+
+                  <div class="col-md-3" data-aos="fade-up" data-aos-delay="200">
+                    <div class="process-item">
+                      <div class="process-number">02</div>
+                      <h5>Plan d’action</h5>
+                      <p>Priorisation des écarts et définition d’une feuille de route réaliste</p>
+                    </div>
+                  </div>
+
+                  <div class="col-md-3" data-aos="fade-up" data-aos-delay="300">
+                    <div class="process-item">
+                      <div class="process-number">03</div>
+                      <h5>Mise en œuvre</h5>
+                      <p>Déploiement des contrôles, processus et documents requis</p>
+                    </div>
+                  </div>
+
+                  <div class="col-md-3" data-aos="fade-up" data-aos-delay="400">
+                    <div class="process-item">
+                      <div class="process-number">04</div>
+                      <h5>Audit</h5>
+                      <p>Préparation finale, validation des preuves et accompagnement</p>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Service Sidebar -->
+          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="300">
+            <div class="service-sidebar">
+
+              <!-- Service Info -->
+              <div class="info-box">
+                <h4>Informations sur le service</h4>
+                <ul class="list-unstyled">
+                  <li>
+                    <i class="bi bi-check2"></i>
+                    <strong>Catégorie :</strong> Conformité et cybersécurité
+                  </li>
+                  <li>
+                    <i class="bi bi-check2"></i>
+                    <strong>Cadres couverts :</strong> CMMC, ISO 27001, SOC 2 Type II, NIS2, Loi 25, GDPR
+                  </li>
+                  <li>
+                    <i class="bi bi-check2"></i>
+                    <strong>Format :</strong> Mandat ponctuel ou accompagnement continu
+                  </li>
+                  <li>
+                    <i class="bi bi-check2"></i>
+                    <strong>Livrables :</strong> Analyse d’écarts, feuille de route, politiques, documentation, préparation d’audit
+                  </li>
+                </ul>
+              </div>
+
+              <!-- Contact Box -->
+              <div class="contact-box">
+                <h4>Besoin d’accompagnement ?</h4>
+                <p>Contactez-nous pour discuter de vos objectifs de conformité et de certification.</p>
+                <a href="index.html#contact" class="btn-contact">Demander une consultation <i class="bi bi-arrow-right"></i></a>
+              </div>
+
+              <!-- Download Box -->
+              <div class="download-box">
+                <h4>Cadres concernés</h4>
+
+                <div class="download-item">
+                  <i class="bi bi-shield-check"></i>
+                  <div class="download-content">
+                    <span>ISO 27001</span>
+                    <a href="index.html#contact" class="download-link">Parler à un expert</a>
+                  </div>
+                </div>
+
+                <div class="download-item">
+                  <i class="bi bi-file-earmark-check"></i>
+                  <div class="download-content">
+                    <span>SOC 2 Type II / CMMC</span>
+                    <a href="index.html#contact" class="download-link">Parler à un expert</a>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section><!-- /Service Details 4 Section -->
+
+  </main>
+
+  <footer id="footer" class="footer homesection">
+    <div class="container">
+      <div class="row gy-3">
+        <div class="col-lg-4 col-md-6 d-flex">
+          <i class="bi bi-geo-alt icon"></i>
+          <div class="address">
+            <h4>Adresse</h4>
+            <p>A108 Adam Street</p>
+            <p>New York, NY 535022</p>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 d-flex">
+          <i class="bi bi-telephone icon"></i>
+          <div>
+            <h4>Contact</h4>
+            <p>
+              <strong>Téléphone :</strong> <span>+1 5589 55488 55</span><br>
+              <strong>Courriel :</strong> <span>info@example.com</span><br>
+            </p>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6">
+          <h4>Nous suivre</h4>
+          <div class="social-links d-flex">
+            <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="container copyright text-center mt-4">
+      <p>© <span>Copyright</span> <strong class="px-1 sitename">Consulting.</strong> <span>Tous droits réservés</span></p>
+    </div>
+
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
