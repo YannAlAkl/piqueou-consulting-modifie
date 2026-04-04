@@ -169,18 +169,27 @@ h6 {
 
 .header .logo {
   line-height: 1;
+  text-decoration: none;
 }
 
 .header .logo img {
-  max-height: 32px;
-  margin-right: 8px;
+  max-height: 44px;
+  width: auto;
+  margin-right: 10px;
 }
 
-.header .logo h1 {
-  font-size: 30px;
+.header .logo h1,
+.header .logo .sitename {
+  font-size: 22px;
   margin: 0;
   font-weight: 700;
-  color: var(--heading-color);
+  color: #ffffff;
+  letter-spacing: 0.3px;
+  white-space: nowrap;
+}
+
+.header .logo .sitename span {
+  color: var(--accent-color, #22c55e);
 }
 
 .scrolled .header {
