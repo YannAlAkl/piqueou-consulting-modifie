@@ -35,28 +35,32 @@
     <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
 
       <nav id="navmenu" class="navmenu">
-        <ul>
-          <li><a href="#hero" class="active">Accueil</a></li>
-          <li><a href="#about">À propos</a></li>
-          <li><a href="#services">Services</a></li>
-          <li><a href="#work-process">Notre Processus</a></li>
-          <li><a href="#consultation">Consultation</a></li>
-          <li><a href="#contact">Contact</a></li>
-          <li class="dropdown">
-            <a href="#"><span>Certifications &amp; Compliance</span>
-              <i class="bi bi-chevron-down toggle-dropdown"></i>
-            </a>
-            <ul>
-              <li><a href="#cmmc">CMMC</a></li>
-              <li><a href="#iso27001">ISO 27001</a></li>
-              <li><a href="#soc2">SOC2 Type II</a></li>
-              <li><a href="#nis2">NIS2</a></li>
-              <li><a href="#loi25-gdpr">Loi 25 / GDPR</a></li>
-            </ul>
-          </li>
-        </ul>
-        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
-      </nav>
+  <ul>
+    <li><a href="#hero" class="active" data-i18n="nav.home">Accueil</a></li>
+    <li><a href="#about" data-i18n="nav.about">À propos</a></li>
+    <li><a href="#services" data-i18n="nav.services">Services</a></li>
+    <li><a href="#work-process" data-i18n="nav.process">Notre Processus</a></li>
+    <li><a href="#consultation" data-i18n="nav.consultation">Consultation</a></li>
+    <li><a href="#contact" data-i18n="nav.contact">Contact</a></li>
+    <li class="dropdown">
+      <a href="#"><span data-i18n="nav.certifications">Certifications &amp; Compliance</span>
+        <i class="bi bi-chevron-down toggle-dropdown"></i>
+      </a>
+      <ul>
+        <li><a href="#cmmc" data-i18n="nav.cmmc">CMMC</a></li>
+        <li><a href="#iso27001" data-i18n="nav.iso27001">ISO 27001</a></li>
+        <li><a href="#soc2" data-i18n="nav.soc2">SOC2 Type II</a></li>
+        <li><a href="#nis2" data-i18n="nav.nis2">NIS2</a></li>
+        <li><a href="#loi25-gdpr" data-i18n="nav.loi25">Loi 25 / GDPR</a></li>
+      </ul>
+    </li>
+  </ul>
+  <div class="lang-switcher">
+    <button data-lang="fr">FR</button>
+    <button data-lang="en">EN</button>
+  </div>
+  <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+</nav>
 
     </div>
   </header>
@@ -69,7 +73,7 @@
         <div class="row align-items-center">
           <div class="col-lg-6">
             <div class="hero-content" data-aos="fade-up" data-aos-delay="200">
-              <h2>
+              <h2 data-i18n="hero.title">
                 Conformité, gouvernance et <span>résilience cyberSécurité</span></h2>
 
               <p>
@@ -830,6 +834,8 @@
             <p class="text-muted"><i class="bi bi-arrow-clockwise"></i> Chargement des actualités…</p>
           </div>
         </div>
+        <script src="assets/js/language.js"></script>
+
 
         <script>
           fetch('assets/js/newsLetter.json')
@@ -1060,6 +1066,7 @@
 
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
+  <script src="assets/js/language.js"></script>
 
 </body>
 
