@@ -3,6 +3,7 @@
   "nav.about": "À propos",
   "nav.services": "Services",
   "nav.process": "Notre Processus",
+  "nav.newslettre": "infolettre",
   "nav.consultation": "Consultation",
   "nav.contact": "Contact",
   "nav.certifications": "Certifications &amp; Compliance",
@@ -12,6 +13,7 @@
   "nav.nis2": "NIS2",
   "nav.loi25": "Loi 25 / GDPR",
 
+  
   "hero.title": "Conformité, gouvernance et <span>résilience cyberSécurité</span>",
   "hero.p": "Piqueou accompagne les organisations dans leur mise en conformité et le renforcement de leur gouvernance numérique. Nous vous aidons à préparer et réussir vos démarches de certification <strong>CMMC, ISO 27001, SOC 2 Type II, NIS2, Loi 25, GDPR</strong>, tout en vous offrant un appui stratégique avec un <strong>CISO, CIO ou DLP à temps partiel</strong>.",
   "hero.btn.cta": "Demander une consultation",

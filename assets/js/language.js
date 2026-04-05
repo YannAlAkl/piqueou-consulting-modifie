@@ -88,12 +88,4 @@ window.switchLang = () => {
 document.addEventListener('DOMContentLoaded', async () => {
   await loadTranslations();
   translate();
-
-  document.querySelectorAll('.lang-switcher [data-lang]').forEach(btn => {
-    btn.addEventListener('click', () => {
-      lang = btn.getAttribute('data-lang');
-      localStorage.setItem('lang', lang);
-      translate();
-    });
-  });
 });

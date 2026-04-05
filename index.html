@@ -9,7 +9,7 @@
   <meta name="keywords" content="">
 
   <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/logo.png" rel="icon">
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
   <!-- Fonts -->
@@ -43,9 +43,11 @@
     <li><a href="#hero" class="active" data-i18n="nav.home">Accueil</a></li>
     <li><a href="#about" data-i18n="nav.about">À propos</a></li>
     <li><a href="#services" data-i18n="nav.services">Services</a></li>
+    <li><a href="#NewsLettre" data-i18n="nav.newsLetter">InfoLettre</a></li>
     <li><a href="#work-process" data-i18n="nav.process">Notre Processus</a></li>
     <li><a href="#consultation" data-i18n="nav.consultation">Consultation</a></li>
     <li><a href="#contact" data-i18n="nav.contact">Contact</a></li>
+    
     <li class="dropdown">
       <a href="#"><span data-i18n="nav.certifications">Certifications &amp; Compliance</span>
         <i class="bi bi-chevron-down toggle-dropdown"></i>
@@ -60,8 +62,10 @@
     </li>
   </ul>
   <div class="lang-switcher">
-    <button data-lang="fr" title="Français"><span class="flag">🇫🇷</span> FR</button>
-    <button data-lang="en" title="English"><span class="flag">🇬🇧</span> EN</button>
+  <select id="lang" name="language">
+  <option value="fr">Français</option>
+  <option value="en">English</option>
+</select>
   </div>
   <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
 </nav>
@@ -90,7 +94,7 @@
               </p>
 
               <div class="hero-btns">
-                <a href="#contact" class="btn btn-primary">Demander une consultation</a>
+                <a href="#contact" class="btn btn-primary" data-i18n="hero.btn.cta">Demander une consultation</a>
                 <a href="#services" class="btn btn-outline">Découvrir nos services</a>
               </div>
 
@@ -1070,7 +1074,6 @@
 
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
-  <script src="assets/js/language.js"></script>
 
 </body>
 
