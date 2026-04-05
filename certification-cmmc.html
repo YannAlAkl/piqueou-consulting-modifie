@@ -40,29 +40,29 @@
 
       <nav id="navmenu" class="navmenu">
         <ul>
-          <li><a href="index.html#hero">Accueil</a></li>
-          <li><a href="index.html#about">À propos</a></li>
-          <li><a href="index.html#services">Services</a></li>
-          <li><a href="index.html#work-process">Notre Processus</a></li>
-          <li><a href="index.html#consultation">Consultation</a></li>
-          <li><a href="index.html#contact">Contact</a></li>
+          <li><a href="index.html#hero" data-i18n="nav.home">Accueil</a></li>
+          <li><a href="index.html#about" data-i18n="nav.about">À propos</a></li>
+          <li><a href="index.html#services" data-i18n="nav.services">Services</a></li>
+          <li><a href="index.html#work-process" data-i18n="nav.process">Notre Processus</a></li>
+          <li><a href="index.html#consultation" data-i18n="nav.consultation">Consultation</a></li>
+          <li><a href="index.html#contact" data-i18n="nav.contact">Contact</a></li>
           <li class="dropdown">
-            <a href="#"><span>Certifications &amp; Compliance</span>
+            <a href="#"><span data-i18n="nav.certifications">Certifications &amp; Compliance</span>
               <i class="bi bi-chevron-down toggle-dropdown"></i>
             </a>
             <ul>
-              <li><a href="certification-cmmc.html">CMMC</a></li>
-              <li><a href="certification-iso-27001.html">ISO 27001</a></li>
-              <li><a href="certification-soc2-type-ii.html">SOC2 Type II</a></li>
-              <li><a href="certification-nis2.html">NIS2</a></li>
-              <li><a href="certification-loi-25-gdpr.html">Loi 25 / GDPR</a></li>
+              <li><a href="certification-cmmc.html" data-i18n="nav.cmmc">CMMC</a></li>
+              <li><a href="certification-iso-27001.html" data-i18n="nav.iso27001">ISO 27001</a></li>
+              <li><a href="certification-soc2-type-ii.html" data-i18n="nav.soc2">SOC2 Type II</a></li>
+              <li><a href="certification-nis2.html" data-i18n="nav.nis2">NIS2</a></li>
+              <li><a href="certification-loi-25-gdpr.html" data-i18n="nav.loi25">Loi 25 / GDPR</a></li>
             </ul>
           </li>
         </ul>
-        <div class="lang-switcher">
-          <button data-lang="fr" title="Français"><span class="flag">🇫🇷</span> FR</button>
-          <button data-lang="en" title="English"><span class="flag">🇬🇧</span> EN</button>
-        </div>
+        <select id="lang" name="language">
+  <option value="fr">Français</option>
+  <option value="en">English</option>
+</select>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
 
@@ -77,8 +77,8 @@
         <div class="container">
           <div class="row d-flex justify-content-center text-center">
             <div class="col-lg-8">
-              <h1 style="color: #ffffff;">Certification CMMC</h1>
-              <p class="mb-0">
+              <h1 style="color: #ffffff;" data-i18n="cmmc.page.title">Certification CMMC</h1>
+              <p class="mb-0" data-i18n="cmmc.page.subtitle">
                 Piqueou accompagne les entreprises pour atteindre les exigences
                 du <strong>Cybersecurity Maturity Model Certification (CMMC)</strong>.
                 Nous vous aidons à préparer vos processus, sécuriser vos informations
@@ -92,8 +92,8 @@
       <nav class="breadcrumbs">
         <div class="container">
           <ol>
-            <li><a href="index.html" style="color: #ffffff !important;">Accueil</a></li>
-            <li class="current" style="color: #ffffff;">Certification CMMC</li>
+            <li><a href="index.html" style="color: #ffffff !important;" data-i18n="nav.home">Accueil</a></li>
+            <li class="current" style="color: #ffffff;" data-i18n="cmmc.breadcrumb">Certification CMMC</li>
           </ol>
         </div>
       </nav>
@@ -106,8 +106,8 @@
 
         <div class="row align-items-center mb-5 content">
           <div class="col-lg-6" data-aos="fade-right" data-aos-delay="200">
-            <h2>Certifications CMMC &amp; Excellence en cybersécurité</h2>
-            <p>
+            <h2 data-i18n="cmmc.section.title">Certifications CMMC &amp; Excellence en cybersécurité</h2>
+            <p data-i18n="cmmc.section.p">
               Piqueou accompagne les organisations dans la préparation et la réussite
               des certifications CMMC pour renforcer leur posture de cybersécurité
               et garantir la conformité aux standards du Département de la Défense américain.
@@ -117,8 +117,8 @@
             <div class="badge-highlight">
               <img src="assets/img/services/cmmc-badge.webp" alt="CMMC Compliance Badge" class="img-fluid">
               <div class="badge-content">
-                <h4>Certified Cybersecurity Partner</h4>
-                <p>Expertise reconnue pour préparer les entreprises aux évaluations CMMC.</p>
+                <h4 data-i18n="cmmc.badge.title">Certified Cybersecurity Partner</h4>
+                <p data-i18n="cmmc.badge.p">Expertise reconnue pour préparer les entreprises aux évaluations CMMC.</p>
               </div>
             </div>
           </div>
@@ -131,9 +131,9 @@
               <img src="assets/img/certifications/cmmc-level1.webp" alt="CMMC Level 1" class="img-fluid">
             </div>
             <div class="cert-details">
-              <h5>CMMC Level 1</h5>
-              <span class="cert-category">Basic Cyber Hygiene</span>
-              <p>Accompagnement pour atteindre les pratiques de sécurité de base et la conformité initiale.</p>
+              <h5 data-i18n="cmmc.level1.title">CMMC Level 1</h5>
+              <span class="cert-category" data-i18n="cmmc.level1.category">Basic Cyber Hygiene</span>
+              <p data-i18n="cmmc.level1.p">Accompagnement pour atteindre les pratiques de sécurité de base et la conformité initiale.</p>
             </div>
           </div>
 
@@ -142,9 +142,9 @@
               <img src="assets/img/certifications/cmmc-level3.webp" alt="CMMC Level 3" class="img-fluid">
             </div>
             <div class="cert-details">
-              <h5>CMMC Level 3</h5>
-              <span class="cert-category">Good Cyber Hygiene</span>
-              <p>Préparation avancée pour gérer les risques et démontrer une sécurité mature et contrôlée.</p>
+              <h5 data-i18n="cmmc.level3.title">CMMC Level 3</h5>
+              <span class="cert-category" data-i18n="cmmc.level3.category">Good Cyber Hygiene</span>
+              <p data-i18n="cmmc.level3.p">Préparation avancée pour gérer les risques et démontrer une sécurité mature et contrôlée.</p>
             </div>
           </div>
 
@@ -153,9 +153,9 @@
               <img src="assets/img/certifications/cmmc-level5.webp" alt="CMMC Level 5" class="img-fluid">
             </div>
             <div class="cert-details">
-              <h5>CMMC Level 5</h5>
-              <span class="cert-category">Advanced / Progressive</span>
-              <p>Support complet pour atteindre un niveau de cybersécurité avancé et durable, conforme aux exigences les plus strictes.</p>
+              <h5 data-i18n="cmmc.level5.title">CMMC Level 5</h5>
+              <span class="cert-category" data-i18n="cmmc.level5.category">Advanced / Progressive</span>
+              <p data-i18n="cmmc.level5.p">Support complet pour atteindre un niveau de cybersécurité avancé et durable, conforme aux exigences les plus strictes.</p>
             </div>
           </div>
 
@@ -167,28 +167,28 @@
               <div class="achievement-item">
                 <i class="bi bi-award"></i>
                 <h3>15+</h3>
-                <p>Clients certifiés</p>
+                <p data-i18n="cmmc.stat1.label">Clients certifiés</p>
               </div>
             </div>
             <div class="col-lg-3 col-sm-6">
               <div class="achievement-item">
                 <i class="bi bi-shield-check"></i>
                 <h3>0</h3>
-                <p>Non-conformités critiques</p>
+                <p data-i18n="cmmc.stat2.label">Non-conformités critiques</p>
               </div>
             </div>
             <div class="col-lg-3 col-sm-6">
               <div class="achievement-item">
                 <i class="bi bi-clock-history"></i>
                 <h3>10</h3>
-                <p>Années d'expérience en CMMC</p>
+                <p data-i18n="cmmc.stat3.label">Années d'expérience en CMMC</p>
               </div>
             </div>
             <div class="col-lg-3 col-sm-6">
               <div class="achievement-item">
                 <i class="bi bi-people"></i>
                 <h3>200+</h3>
-                <p>Professionnels accompagnés</p>
+                <p data-i18n="cmmc.stat4.label">Professionnels accompagnés</p>
               </div>
             </div>
           </div>
@@ -206,7 +206,7 @@
         <div class="col-lg-4 col-md-6 d-flex">
           <i class="bi bi-geo-alt icon"></i>
           <div class="address">
-            <h4>Adresse</h4>
+            <h4 data-i18n="footer.addr.title">Adresse</h4>
             <p>A108 Adam Street</p>
             <p>New York, NY 535022</p>
           </div>
@@ -215,16 +215,16 @@
         <div class="col-lg-4 col-md-6 d-flex">
           <i class="bi bi-telephone icon"></i>
           <div>
-            <h4>Contact</h4>
+            <h4 data-i18n="footer.contact.title">Contact</h4>
             <p>
-              <strong>Téléphone :</strong> <span>+1 5589 55488 55</span><br>
-              <strong>Courriel :</strong> <span>info@example.com</span><br>
+              <strong data-i18n="footer.phone.label">Téléphone :</strong> <span>+1 5589 55488 55</span><br>
+              <strong data-i18n="footer.email.label">Courriel :</strong> <span>info@example.com</span><br>
             </p>
           </div>
         </div>
 
         <div class="col-lg-4 col-md-6">
-          <h4>Nous suivre</h4>
+          <h4 data-i18n="footer.follow">Nous suivre</h4>
           <div class="social-links d-flex">
             <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
           </div>
@@ -234,7 +234,7 @@
     </div>
 
     <div class="container copyright text-center mt-4">
-      <p>© <span>Copyright</span> <strong class="px-1 sitename">Consulting.</strong> <span>Tous droits réservés</span></p>
+      <p>© <span>Copyright</span> <strong class="px-1 sitename">Consulting.</strong> <span data-i18n="footer.copyright">Tous droits réservés</span></p>
     </div>
 
   </footer>
