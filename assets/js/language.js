@@ -89,11 +89,15 @@ document.addEventListener('DOMContentLoaded', async () => {
   await loadTranslations();
   translate();
 
-  document.querySelectorAll('.lang-switcher [data-lang]').forEach(btn => {
-    btn.addEventListener('click', () => {
-      lang = btn.getAttribute('data-lang');
+  const select = document.getElementById("lang")
+  if(select){
+    select.value = lang
+    select.addEventListener("change",()=>{
+      lang = select.value;
       localStorage.setItem('lang', lang);
       translate();
+      
     });
-  });
+
+  }
 });
