@@ -836,73 +836,8 @@
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
 
-        <!-- Les cartes sont chargées dynamiquement depuis NewsLetter.json -->
-        <div id="newsletter-cards" class="row gy-4" data-aos="fade-up" data-aos-delay="250">
-          <div class="col-12 text-center py-4">
-            <p class="text-muted"><i class="bi bi-arrow-clockwise"></i> Chargement des actualités…</p>
-          </div>
-        </div>
-        <script src="assets/js/language.js"></script>
-
-
-        <script>
-          fetch('assets/js/newsLetter.json')
-            .then(function(response) { return response.json(); })
-            .then(function(newsLetterData) {
-              var container = document.getElementById('newsletter-cards');
-              var vulns = (newsLetterData.vulnerabilities || []).slice(0, 3);
-
-              if (!vulns.length) {
-                container.innerHTML = '<div class="col-12 text-center"><p>Aucune actualité disponible.</p></div>';
-                return;
-              }
-
-              container.innerHTML = vulns.map(function (v) {
-                var isKnown = v.knownRansomwareCampaignUse === 'Known';
-                var badgeLabel = isKnown ? '⚠ Ransomware connu' : v.cveID;
-                var badgeStyle = isKnown ? ' style="background-color:#dc3545;"' : '';
-
-                var tags = (v.cwes && v.cwes.length)
-                  ? v.cwes.map(function (c) { return '<span class="tag">' + c + '</span>'; }).join('')
-                  : '<span class="tag">CISA KEV</span>';
-
-                var title = v.vulnerabilityName.length > 90
-                  ? v.vulnerabilityName.slice(0, 90) + '\u2026' : v.vulnerabilityName;
-
-                var desc = v.shortDescription.length > 220
-                  ? v.shortDescription.slice(0, 220) + '\u2026' : v.shortDescription;
-
-                return (
-                  '<div class="col-lg-4 col-md-6">' +
-                    '<article class="showcase-card">' +
-                      '<div class="card-image">' +
-                        '<div class="cve-visual">' +
-                          '<i class="bi bi-shield-exclamation"></i>' +
-                          '<span class="cve-label">' + v.cveID + '</span>' +
-                        '</div>' +
-                        '<span class="card-badge"' + badgeStyle + '>' + badgeLabel + '</span>' +
-                      '</div>' +
-                      '<div class="card-body">' +
-                        '<div class="card-meta">' +
-                          '<span class="meta-client"><i class="bi bi-building"></i> ' + v.vendorProject + '</span>' +
-                          '<span class="meta-date">' + v.dateAdded + '</span>' +
-                        '</div>' +
-                        '<h3 class="card-title">' + title + '</h3>' +
-                        '<p class="card-text">' + desc + '</p>' +
-                        '<div class="card-tags">' + tags + '</div>' +
-                      '</div>' +
-                    '</article>' +
-                  '</div>'
-                );
-              }).join('');
-            })
-            .catch(function(error) {
-              console.error('Error loading newsletter:', error);
-              document.getElementById('newsletter-cards').innerHTML = 
-                '<div class="col-12 text-center"><p>Erreur lors du chargement des actualités.</p></div>';
-            });
-        </script>
-
+      <div id="newsletter-cards" class="row gy-4" data-aos="fade-up" data-aos-delay="250"></div>
+        <script src="assets/js/api.js"></script>
         <div class="cta-banner" data-aos="zoom-in" data-aos-delay="100">
           <div class="row align-items-center">
             <div class="col-lg-7">
@@ -1072,9 +1007,7 @@
   <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
 
-  <!-- Main JS File -->
-  <script src="assets/js/main.js"></script>
-
+<script src="assets/js/main.js"></script>
+<script src="assets/js/language.js"></script>
 </body>
-
 </html>

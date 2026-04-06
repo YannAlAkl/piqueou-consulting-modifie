@@ -5290,6 +5290,45 @@ section,
     margin: 0 auto;
   }
 
+/*--------------------------------------------------------------
+# Newsletter Cards
+--------------------------------------------------------------*/
+#newsletter-cards .news-card {
+  background-color: var(--surface-color);
+  color: var(--default-color);
+  border: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease;
+}
+
+#newsletter-cards .news-card:hover {
+  transform: translateY(-5px);
+  border-color: var(--accent-color);
+}
+
+#newsletter-cards .news-card h3 {
+  color: var(--heading-color);
+  margin-top: 0;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+#newsletter-cards .news-card p {
+  color: var(--default-color);
+  font-size: 0.9rem;
+  margin-bottom: 5px;
+}
+
+#newsletter-cards .news-card a {
+  display: inline-block;
+  margin-top: 10px;
+  font-weight: 600;
+  color: var(--accent-color);
+}
+
   .certifications-5 .achievements-banner {
     padding: 2rem 1rem;
   }
