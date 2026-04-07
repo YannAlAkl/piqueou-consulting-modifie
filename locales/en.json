@@ -12,7 +12,6 @@
   "nav.soc2": "SOC2 Type II",
   "nav.nis2": "NIS2",
   "nav.loi25": "Law 25 / GDPR",
-
   "hero.title": "Compliance, governance and <span>cybersecurity resilience</span>",
   "hero.p": "Piqueou helps organizations achieve compliance and strengthen their digital governance. We support you in preparing and succeeding in your <strong>CMMC, ISO 27001, SOC 2 Type II, NIS2, Law 25, GDPR</strong> certification journey, while offering strategic support with a <strong>fractional CISO, CIO or DPO</strong>.",
   "hero.btn.cta": "Request a consultation",
@@ -20,7 +19,6 @@
   "hero.stat1.label": "Compliance frameworks covered",
   "hero.stat2.label": "Strategic roles offered on a fractional basis",
   "hero.stat3.label": "Complementary expertise: ITAR and controlled goods",
-
   "about.title": "A strategic partner for your compliance and cybersecurity",
   "about.lead": "Piqueou supports organizations in managing digital risks, achieving regulatory compliance, and preparing for international cybersecurity certifications.",
   "about.p": "Our approach combines strategic expertise with operational support. We help businesses structure their IT governance, meet regulatory requirements, and prepare effectively for audits and certifications such as CMMC, ISO 27001, SOC 2 Type II, NIS2, Law 25 and GDPR.",
@@ -34,7 +32,6 @@
   "about.feature4.title": "Governance and Risk Management",
   "about.feature4.p": "Structuring policies, processes and controls to strengthen cyber resilience and organizational maturity.",
   "about.cta": "Talk to an expert",
-
   "process.title": "Project Implementation Methodology",
   "process.lead": "Piqueou supports organizations in implementing cybersecurity, compliance and IT governance projects with a structured, pragmatic and results-driven approach.",
   "process.p": "Our methodology ensures efficient project execution, from initial analysis to control maintenance, ensuring alignment with regulatory requirements and business objectives.",
@@ -50,7 +47,6 @@
   "process.step4.p": "Compliance verification, evidence preparation and support during audits or assessments.",
   "process.step5.title": "Continuous Improvement",
   "process.step5.p": "Performance monitoring, control adjustments and long-term support to maintain compliance.",
-
   "cta.title": "Ready to strengthen your compliance and cybersecurity?",
   "cta.p": "Regulatory requirements and digital risks are constantly evolving. Piqueou supports organizations in preparing for certifications, IT governance and risk management to protect their operations and ensure compliance.",
   "cta.stat1.label": "Compliance frameworks",
@@ -70,7 +66,6 @@
   "cta.form.loading": "Loading...",
   "cta.form.sent": "Your message has been sent. Thank you!",
   "cta.form.submit": "Request a consultation",
-
   "services.s1.title": "Compliance and Certifications",
   "services.s1.p": "Strategic and operational support to achieve your certifications and meet regulatory requirements.",
   "services.s1.more": "Learn more",
@@ -108,7 +103,6 @@
   "services.s7.f3": "Post-incident analysis",
   "services.s7.more": "Learn more",
   "services.cta": "Request a consultation",
-
   "why.title": "Why choose Piqueou for your compliance and cybersecurity projects?",
   "why.lead": "We combine technical expertise and regulatory knowledge to secure your operations and prepare your certifications.",
   "why.p": "Our personalized approach ensures that every client benefits from strategic, operational and internationally compliant support.",
@@ -125,7 +119,6 @@
   "why.stat3.label": "Years of Expertise",
   "why.stat4.label": "Certifications Handled",
   "why.badge": "Years of Excellence",
-
   "faq.q1": "What is a fractional CISO / CIO / DPO?",
   "faq.a1": "It is a senior cybersecurity or IT governance expert who supports your company on a part-time basis to define strategies, manage risks and oversee compliance without a permanent hire.",
   "faq.q2": "Which compliance frameworks does Piqueou support?",
@@ -139,7 +132,6 @@
   "faq.card.title": "Didn't find your answer?",
   "faq.card.p": "Our team is available to answer your questions about compliance, certifications and IT support. Feel free to contact us for a personalized consultation.",
   "faq.card.btn": "Contact us",
-
   "newsletter.title": "Newsletter",
   "newsletter.loading": "Loading news…",
   "newsletter.empty": "No news available.",
@@ -148,7 +140,6 @@
   "newsletter.banner.p": "Discover how our expertise can accelerate your next project and generate measurable impact across all channels.",
   "newsletter.banner.btn1": "Start a conversation",
   "newsletter.banner.btn2": "Explore all our work",
-
   "contact.section.title": "Contact",
   "contact.section.subtitle": "Get in Touch",
   "contact.addr.title": "Address",
@@ -163,14 +154,12 @@
   "contact.form.loading": "Sending...",
   "contact.form.sent": "Your message has been sent successfully. Thank you!",
   "contact.form.submit": "Send message",
-
   "footer.addr.title": "Address",
   "footer.contact.title": "Contact",
   "footer.phone.label": "Phone:",
   "footer.email.label": "Email:",
   "footer.follow": "Follow us",
   "footer.copyright": "All rights reserved",
-
   "cmmc.page.title": "CMMC Certification",
   "cmmc.page.subtitle": "Piqueou supports organizations in meeting the requirements of the <strong>Cybersecurity Maturity Model Certification (CMMC)</strong>. We help you prepare your processes, secure your information and succeed in your audits to meet the standards of the U.S. Department of Defense.",
   "cmmc.breadcrumb": "CMMC Certification",
@@ -191,7 +180,6 @@
   "cmmc.stat2.label": "Critical non-conformities",
   "cmmc.stat3.label": "Years of CMMC experience",
   "cmmc.stat4.label": "Professionals supported",
-
   "iso.page.title": "ISO 27001 Certification",
   "iso.page.subtitle": "Piqueou supports organizations in achieving compliance with the ISO 27001 standard, by structuring your policies, processes and controls to ensure information security and succeed in your certification audits.",
   "iso.breadcrumb": "ISO 27001 Certification",
@@ -212,7 +200,6 @@
   "iso.stat2.label": "Critical non-conformities",
   "iso.stat3.label": "Years of information security experience",
   "iso.stat4.label": "Professionals supported",
-
   "loi25.page.title": "Law 25 / GDPR Compliance",
   "loi25.page.subtitle": "Piqueou supports organizations in achieving compliance with personal data protection regulations, including Law 25 in Quebec and the GDPR in Europe. We help organizations structure their data protection policies, reduce legal risks and demonstrate compliance during audits or regulatory assessments.",
   "loi25.breadcrumb": "Law 25 / GDPR Compliance",
@@ -234,7 +221,6 @@
   "loi25.stat2.label": "Projects successfully delivered",
   "loi25.stat3.label": "Years of cybersecurity experience",
   "loi25.stat4.label": "Professionals supported",
-
   "nis2.page.title": "NIS2 Certification",
   "nis2.page.subtitle": "Piqueou supports organizations in complying with the European NIS2 directive to strengthen cybersecurity of critical infrastructures and reduce digital risks. We help prepare your policies, processes and documentation to succeed in your audits and demonstrate compliance.",
   "nis2.breadcrumb": "NIS2 Certification",
@@ -255,7 +241,6 @@
   "nis2.stat2.label": "Critical non-conformities",
   "nis2.stat3.label": "Years of cybersecurity experience",
   "nis2.stat4.label": "Professionals trained and supported",
-
   "soc2.page.title": "SOC 2 Type II Certification",
   "soc2.page.subtitle": "Piqueou supports your organization in preparing for and obtaining SOC 2 Type II certification. We help you structure your internal controls, document your processes and demonstrate the security, availability and confidentiality of your systems.",
   "soc2.breadcrumb": "SOC 2 Type II Certification",
@@ -276,7 +261,6 @@
   "soc2.stat2.label": "Critical non-conformities",
   "soc2.stat3.label": "Years of information security experience",
   "soc2.stat4.label": "Professionals supported",
-
   "ciso.page.title": "CISO / CIO",
   "ciso.page.subtitle": "Piqueou offers part-time cybersecurity and information technology governance leadership services. Our experts act as CISO, CIO or Data Protection Officer (DPO) to help organizations structure their digital strategy, strengthen security and ensure regulatory compliance.",
   "ciso.breadcrumb": "Part-time CISO / CIO / DPO",
@@ -316,7 +300,6 @@
   "ciso.resource1.link": "Download PDF",
   "ciso.resource2.name": "Case study",
   "ciso.resource2.link": "Download PDF",
-
   "incident.page.title": "Incident Response and Crisis Management",
   "incident.page.subtitle": "We support organizations in managing cybersecurity incidents, from detection to resolution, to limit operational, financial and reputational impacts. Our structured approach ensures a rapid, coordinated and effective response in crisis situations.",
   "incident.breadcrumb": "Incident Response",
@@ -356,7 +339,6 @@
   "incident.related1.link": "Learn more",
   "incident.related2.name": "Risk management",
   "incident.related2.link": "Learn more",
-
   "cyber.page.title": "Cybersecurity and Regulatory Compliance",
   "cyber.page.subtitle": "Piqueou supports organizations in managing their digital risks and complying with regulatory requirements. We help you implement robust cybersecurity practices, prepare your certifications and ensure the governance of your information systems in accordance with international standards such as ISO 27001, SOC2 Type II, CMMC, NIS2, Law 25 and GDPR.",
   "cyber.breadcrumb": "Cybersecurity and Regulatory Compliance",
@@ -392,7 +374,6 @@
   "cyber.contact.btn": "Request a consultation",
   "cyber.certs.title": "Key certifications",
   "cyber.certs.expert": "Talk to an expert",
-
   "gov.page.title": "Governance and risk management",
   "gov.page.subtitle": "Piqueou supports organizations in implementing solid governance and digital risk management practices. We help identify, assess and reduce operational, regulatory and cyber risks while strengthening strategic decision-making and organizational resilience.",
   "gov.breadcrumb": "Governance and risk management",
@@ -426,7 +407,6 @@
   "gov.contact.p": "Contact Piqueou to strengthen your governance and risk management.",
   "gov.contact.btn": "Request a consultation",
   "gov.expertise.title": "Areas of expertise",
-
   "audit.page.title": "Audit Preparation",
   "audit.page.subtitle": "Piqueou supports your organization in full preparation for compliance audits and assessments. We help you structure your documents, procedures and controls to ensure effective success during your regulatory or normative audits.",
   "audit.breadcrumb": "Audit Preparation",
@@ -460,7 +440,6 @@
   "audit.contact.p": "Contact Piqueou to strengthen your governance and risk management.",
   "audit.contact.btn": "Request a consultation",
   "audit.expertise.title": "Areas of expertise",
-
   "conformity.page.title": "Compliance and certifications",
   "conformity.page.subtitle": "Piqueou supports organizations in their cybersecurity compliance and information governance approach. We help organizations prepare for and succeed in recognized certifications such as CMMC, ISO 27001, SOC 2 Type II, as well as compliance with NIS2, Law 25 and GDPR regulations. Our approach covers gap analysis, implementation of necessary controls and full audit preparation.",
   "conformity.breadcrumb": "Compliance and certifications",
@@ -496,7 +475,6 @@
   "conformity.contact.btn": "Request a consultation",
   "conformity.frameworks.title": "Applicable frameworks",
   "conformity.expert.link": "Talk to an expert",
-
   "itar.page.title": "Controlled Goods and ITAR Compliance",
   "itar.page.subtitle": "Piqueou supports organizations in preparing and organizing the steps necessary to obtain certifications related to controlled goods and ITAR (International Traffic in Arms Regulations). We help organizations structure their processes, implement required controls and prepare the necessary files to meet government and industry requirements.",
   "itar.breadcrumb": "Controlled Goods and ITAR Compliance",
@@ -532,7 +510,6 @@
   "itar.contact.p": "Contact our experts to prepare your organization for controlled goods program and ITAR requirements.",
   "itar.contact.btn": "Request a consultation",
   "itar.expertise.title": "Areas of expertise",
-
   "svcdetails.getstarted": "Get Started",
   "svcdetails.page.title": "Service Details",
   "svcdetails.page.subtitle": "Odio et unde deleniti. Deserunt numquam exercitationem. Officiis quo odio sint voluptas consequatur ut a odio voluptatem. Sit dolorum debitis veritatis natus dolores. Quasi ratione sint. Sit quaerat ipsum dolorem.",
@@ -555,7 +532,6 @@
   "svcdetails.footer.hours.weekdays": "Mon-Sat:",
   "svcdetails.footer.hours.sunday": "Sunday",
   "svcdetails.footer.hours.closed": "Closed",
-
   "starter.getstarted": "Get Started",
   "starter.page.title": "Starter Page",
   "starter.page.subtitle": "Odio et unde deleniti. Deserunt numquam exercitationem. Officiis quo odio sint voluptas consequatur ut a odio voluptatem. Sit dolorum debitis veritatis natus dolores. Quasi ratione sint. Sit quaerat ipsum dolorem.",
@@ -567,5 +543,7 @@
   "starter.footer.hours.title": "Opening Hours",
   "starter.footer.hours.weekdays": "Mon-Sat:",
   "starter.footer.hours.sunday": "Sunday",
-  "starter.footer.hours.closed": "Closed"
+  "starter.footer.hours.closed": "Closed",
+  "newsletter.page.heading": "Newsletter — Regulatory Watch",
+  "newsletter.page.subtitle": "Follow the latest regulatory publications on cybersecurity, compliance and digital governance from the U.S. Federal Register."
 }

@@ -4,31 +4,139 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Newsletter - Piqueou Consulting</title>
+  <title>InfoLettre - Piqueou Consulting</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
 
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
   <link href="https://fonts.googleapis.com" rel="preconnect">
   <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Raleway:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap" rel="stylesheet">
 
+  <!-- Vendor CSS Files -->
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
-  <link rel="stylesheet" href="assets/css/main.css">
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+  <style>
+    .newsletter-filters {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-bottom: 36px;
+      justify-content: center;
+    }
+    .newsletter-filters button {
+      background: transparent;
+      border: 1.5px solid color-mix(in srgb, var(--default-color), transparent 70%);
+      color: var(--default-color);
+      padding: 6px 18px;
+      border-radius: 20px;
+      font-size: 0.82rem;
+      font-weight: 500;
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+    .newsletter-filters button:hover,
+    .newsletter-filters button.active {
+      background: var(--accent-color);
+      border-color: var(--accent-color);
+      color: #fff;
+    }
+    .portfolio .showcase-card .card-image .doc-visual {
+      height: 240px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      transition: transform 0.4s ease;
+    }
+    .portfolio .showcase-card .card-image .doc-visual i {
+      font-size: 2.8rem;
+      opacity: 0.75;
+      color: #fff;
+    }
+    .portfolio .showcase-card .card-image .doc-visual .doc-number {
+      font-family: monospace;
+      font-size: 0.85rem;
+      font-weight: 700;
+      color: rgba(255,255,255,0.85);
+      background: rgba(0,0,0,0.25);
+      padding: 4px 12px;
+      border-radius: 6px;
+      letter-spacing: 1px;
+    }
+    @media (max-width: 768px) {
+      .portfolio .showcase-card .card-image .doc-visual { height: 200px; }
+    }
+    .doc-visual.type-rule           { background: linear-gradient(135deg, #1a3a5c 0%, #2d6a9e 100%); }
+    .doc-visual.type-proposed-rule  { background: linear-gradient(135deg, #2d1a5c 0%, #6a2d9e 100%); }
+    .doc-visual.type-notice         { background: linear-gradient(135deg, #1a4a3a 0%, #2d9e6a 100%); }
+    .doc-visual.type-presidential   { background: linear-gradient(135deg, #4a1a1a 0%, #9e2d2d 100%); }
+    .doc-visual.type-other          { background: linear-gradient(135deg, #3a3a1a 0%, #9e8f2d 100%); }
+    .portfolio .showcase-card .card-body .card-read-more {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      margin-top: 16px;
+      font-size: 0.82rem;
+      font-weight: 600;
+      color: var(--accent-color);
+      text-decoration: none;
+      transition: gap 0.2s;
+    }
+    .portfolio .showcase-card .card-body .card-read-more:hover { gap: 10px; }
+    .newsletter-stats {
+      display: flex;
+      gap: 40px;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin-bottom: 40px;
+    }
+    .newsletter-stats .stat { text-align: center; }
+    .newsletter-stats .stat strong {
+      display: block;
+      font-size: 2rem;
+      font-weight: 700;
+      color: var(--accent-color);
+    }
+    .newsletter-stats .stat span {
+      font-size: 0.82rem;
+      color: color-mix(in srgb, var(--default-color), transparent 40%);
+    }
+    .newsletter-state {
+      text-align: center;
+      padding: 60px 20px;
+      color: color-mix(in srgb, var(--default-color), transparent 40%);
+    }
+    .newsletter-state i { font-size: 3rem; margin-bottom: 16px; display: block; }
+  </style>
 </head>
 
-<body class="services-details-page">
+<body class="newsletter-page">
 
   <header id="header" class="header d-flex align-items-center sticky-top">
-    <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
+    <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
       <a href="index.html" class="logo d-flex align-items-center">
-        <h1 class="sitename">Piqueou Consulting</h1>
+        <img src="assets/img/logo.png" alt="Piqueou Consulting">
+        <span class="sitename">Piqueou <span>Consulting</span></span>
       </a>
+
       <nav id="navmenu" class="navmenu">
         <ul>
           <li><a href="index.html#hero" data-i18n="nav.home">Accueil</a></li>
           <li><a href="index.html#about" data-i18n="nav.about">À propos</a></li>
           <li><a href="index.html#services" data-i18n="nav.services">Services</a></li>
-          <li><a href="./newLetter.html" data-i18n="nav.newsLetter">InfoLettre</a> </li>
           <li><a href="index.html#work-process" data-i18n="nav.process">Notre Processus</a></li>
           <li><a href="index.html#consultation" data-i18n="nav.consultation">Consultation</a></li>
           <li><a href="index.html#contact" data-i18n="nav.contact">Contact</a></li>
@@ -44,11 +152,12 @@
               <li><a href="certification-loi-25-gdpr.html" data-i18n="nav.loi25">Loi 25 / GDPR</a></li>
             </ul>
           </li>
+          <li><a href="newLetter.html" class="active" data-i18n="nav.newslettre">InfoLettre</a></li>
         </ul>
-        <select id="lang" name="language">
-  <option value="fr">Français</option>
-  <option value="en">English</option>
-</select>
+        <div class="lang-switcher">
+          <button data-lang="fr" title="Français"><span class="flag">🇫🇷</span> FR</button>
+          <button data-lang="en" title="English"><span class="flag">🇬🇧</span> EN</button>
+        </div>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
     </div>
@@ -56,36 +165,262 @@
 
   <main class="main">
 
-    <div class="page-title dark-background">
-      <div class="container position-relative">
-        <h1>Newsletter Archives</h1>
-        <p>Piqueou propose une newsletter mensuelle rédigée avec soin, présentant des analyses approfondies sur les <strong>menaces de cybersécurité en constante évolution</strong>, les <strong>meilleures pratiques stratégiques</strong> et les dernières <strong>mises à jour réglementaires</strong>.</p>
-        <nav class="breadcrumbs">
-          <ol>
-            <li><a href="index.html">Home</a></li>
-            <li class="current">Newsletter Archives</li>
-          </ol>
-        </nav>
+    <!-- Page Title -->
+    <div class="page-title position-relative" style="background-color: #0f172a; color: #ffffff;">
+      <div class="heading">
+        <div class="container">
+          <div class="row d-flex justify-content-center text-center">
+            <div class="col-lg-8">
+              <h1 style="color: #ffffff;" data-i18n="newsletter.page.heading">InfoLettre — Veille Réglementaire</h1>
+              <p class="mb-0" data-i18n="newsletter.page.subtitle">
+                Suivez les dernières publications réglementaires en cybersécurité, conformité et gouvernance numérique issues du Federal Register américain.
+              </p>
+            </div>
+          </div>
+        </div>
       </div>
+      <nav class="breadcrumbs">
+        <div class="container">
+          <ol>
+            <li><a href="index.html" style="color: #ffffff !important;" data-i18n="nav.home">Accueil</a></li>
+            <li class="current" style="color: #ffffff;" data-i18n="nav.newslettre">InfoLettre</li>
+          </ol>
+        </div>
+      </nav>
     </div>
 
-    <section id="services" class="services section">
-      <div class="container">
-        <div class="row gy-4" id="newsletter-cards">
-            </div>
+    <!-- Newsletter Section -->
+    <section id="newsletter" class="portfolio section scrollingsections">
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <!-- Stats bar -->
+        <div id="newsletter-stats" class="newsletter-stats" data-aos="fade-up" data-aos-delay="150"></div>
+
+        <!-- Filter buttons -->
+        <div id="newsletter-filters" class="newsletter-filters" data-aos="fade-up" data-aos-delay="200"></div>
+
+        <!-- Cards grid -->
+        <div id="newsletter-cards" class="row gy-4" data-aos="fade-up" data-aos-delay="250">
+          <div class="newsletter-state">
+            <i class="bi bi-arrow-clockwise"></i>
+            <p data-i18n="newsletter.loading">Chargement des actualités…</p>
+          </div>
+        </div>
+
       </div>
     </section>
 
   </main>
 
-  <footer id="footer" class="footer dark-background">
+  <footer id="footer" class="footer homesection">
+    <div class="container">
+      <div class="row gy-3">
+        <div class="col-lg-4 col-md-6 d-flex">
+          <i class="bi bi-geo-alt icon"></i>
+          <div class="address">
+            <h4 data-i18n="footer.addr.title">Adresse</h4>
+            <p>A108 Adam Street</p>
+            <p>New York, NY 535022</p>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 d-flex">
+          <i class="bi bi-telephone icon"></i>
+          <div>
+            <h4 data-i18n="footer.contact.title">Contact</h4>
+            <p>
+              <strong data-i18n="footer.phone.label">Téléphone :</strong> <span>+1 5589 55488 55</span><br>
+              <strong data-i18n="footer.email.label">Courriel :</strong> <span>info@example.com</span><br>
+            </p>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <h4 data-i18n="footer.follow">Nous suivre</h4>
+          <div class="social-links d-flex">
+            <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
     <div class="container copyright text-center mt-4">
-      <p>© <span>Copyright</span> <strong class="px-1 sitename">Piqueou Consulting</strong> <span>All Rights Reserved</span></p>
+      <p>© <span>Copyright</span> <strong class="px-1 sitename">Consulting.</strong> <span data-i18n="footer.copyright">Tous droits réservés</span></p>
     </div>
   </footer>
 
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/js/api.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/language.js"></script>
+
+  <script>
+  (function () {
+
+    var TYPE_ICONS = {
+      'Rule':                   'bi-file-earmark-ruled',
+      'Proposed Rule':          'bi-file-earmark-text',
+      'Notice':                 'bi-bell',
+      'Presidential Document':  'bi-building',
+    };
+    var TYPE_CSS = {
+      'Rule':                   'type-rule',
+      'Proposed Rule':          'type-proposed-rule',
+      'Notice':                 'type-notice',
+      'Presidential Document':  'type-presidential',
+    };
+    var LABELS = {
+      'fr': {
+        'Rule': 'Règle', 'Proposed Rule': 'Règle proposée',
+        'Notice': 'Avis', 'Presidential Document': 'Document présidentiel',
+        'All': 'Tout', 'read_more': 'Lire le document', 'source': 'Federal Register',
+        'total': 'Publications', 'types': 'Types', 'agencies': 'Agences',
+        'no_results': 'Aucun résultat pour ce filtre.',
+        'error': 'Erreur lors du chargement des actualités.',
+      },
+      'en': {
+        'Rule': 'Rule', 'Proposed Rule': 'Proposed Rule',
+        'Notice': 'Notice', 'Presidential Document': 'Presidential Document',
+        'All': 'All', 'read_more': 'Read document', 'source': 'Federal Register',
+        'total': 'Publications', 'types': 'Types', 'agencies': 'Agencies',
+        'no_results': 'No results for this filter.',
+        'error': 'Error loading newsletter.',
+      }
+    };
+
+    function getLang() {
+      return localStorage.getItem('piqueou-lang') === 'en' ? 'en' : 'fr';
+    }
+    function t(key) {
+      var l = getLang();
+      return (LABELS[l] && LABELS[l][key]) || LABELS.fr[key] || key;
+    }
+    function truncate(str, max) {
+      if (!str) return '';
+      return str.length > max ? str.slice(0, max) + '\u2026' : str;
+    }
+    function agencyName(doc) {
+      return (doc.agencies && doc.agencies.length) ? doc.agencies[0].name : t('source');
+    }
+
+    function renderCard(doc) {
+      var typeClass = TYPE_CSS[doc.type]  || 'type-other';
+      var typeIcon  = TYPE_ICONS[doc.type] || 'bi-file-earmark';
+      var typeLabel = t(doc.type) || doc.type;
+      return (
+        '<div class="col-lg-4 col-md-6" data-type="' + (doc.type || '') + '">' +
+          '<article class="showcase-card">' +
+            '<div class="card-image">' +
+              '<div class="doc-visual ' + typeClass + '">' +
+                '<i class="bi ' + typeIcon + '"></i>' +
+                '<span class="doc-number">' + (doc.document_number || '') + '</span>' +
+              '</div>' +
+              '<span class="card-badge">' + typeLabel + '</span>' +
+            '</div>' +
+            '<div class="card-body">' +
+              '<div class="card-meta">' +
+                '<span class="meta-client"><i class="bi bi-building"></i> ' + truncate(agencyName(doc), 40) + '</span>' +
+                '<span class="meta-date">' + (doc.publication_date || '') + '</span>' +
+              '</div>' +
+              '<h3 class="card-title">' + truncate(doc.title, 100) + '</h3>' +
+              '<p class="card-text">' + truncate(doc.abstract, 200) + '</p>' +
+              '<div class="card-tags">' +
+                '<span class="tag">' + t('source') + '</span>' +
+                (doc.type ? '<span class="tag">' + typeLabel + '</span>' : '') +
+              '</div>' +
+              '<a href="' + (doc.html_url || '#') + '" target="_blank" rel="noopener" class="card-read-more">' +
+                t('read_more') + ' <i class="bi bi-arrow-right"></i>' +
+              '</a>' +
+            '</div>' +
+          '</article>' +
+        '</div>'
+      );
+    }
+
+    var allResults = [];
+    var activeType = '';
+
+    function applyFilter(filter) {
+      activeType = filter;
+      renderFilters();
+      renderCards();
+    }
+
+    function renderStats() {
+      var el = document.getElementById('newsletter-stats');
+      if (!el) return;
+      var types = {}, agencies = {};
+      allResults.forEach(function (r) {
+        types[r.type] = 1;
+        agencies[agencyName(r)] = 1;
+      });
+      el.innerHTML =
+        '<div class="stat"><strong>' + allResults.length + '</strong><span>' + t('total') + '</span></div>' +
+        '<div class="stat"><strong>' + Object.keys(types).length + '</strong><span>' + t('types') + '</span></div>' +
+        '<div class="stat"><strong>' + Object.keys(agencies).length + '</strong><span>' + t('agencies') + '</span></div>';
+    }
+
+    function renderFilters() {
+      var bar = document.getElementById('newsletter-filters');
+      if (!bar) return;
+      var types = [];
+      allResults.forEach(function (r) { if (r.type && types.indexOf(r.type) === -1) types.push(r.type); });
+      bar.innerHTML =
+        '<button class="' + (activeType === '' ? 'active' : '') + '" data-filter="">' + t('All') + '</button>' +
+        types.map(function (tp) {
+          return '<button class="' + (activeType === tp ? 'active' : '') + '" data-filter="' + tp + '">' + (t(tp) || tp) + '</button>';
+        }).join('');
+      bar.querySelectorAll('button').forEach(function (btn) {
+        btn.addEventListener('click', function () { applyFilter(btn.getAttribute('data-filter')); });
+      });
+    }
+
+    function renderCards() {
+      var container = document.getElementById('newsletter-cards');
+      if (!container) return;
+      var filtered = activeType ? allResults.filter(function (r) { return r.type === activeType; }) : allResults;
+      if (!filtered.length) {
+        container.innerHTML = '<div class="newsletter-state col-12"><i class="bi bi-inbox"></i><p>' + t('no_results') + '</p></div>';
+        return;
+      }
+      container.innerHTML = filtered.map(renderCard).join('');
+      if (window.AOS) AOS.refresh();
+    }
+
+    fetch('assets/js/newsLetter.json')
+      .then(function (res) { return res.json(); })
+      .then(function (data) {
+        allResults = data.results || [];
+        renderStats();
+        renderFilters();
+        renderCards();
+      })
+      .catch(function () {
+        var c = document.getElementById('newsletter-cards');
+        if (c) c.innerHTML = '<div class="newsletter-state col-12"><i class="bi bi-exclamation-circle"></i><p>' + t('error') + '</p></div>';
+      });
+
+    // Re-render labels when language switches
+    document.addEventListener('click', function (e) {
+      var btn = e.target.closest && e.target.closest('.lang-switcher [data-lang]');
+      if (btn && allResults.length) {
+        setTimeout(function () {
+          renderStats();
+          renderFilters();
+          renderCards();
+        }, 120);
+      }
+    });
+
+  })();
+  </script>
 
 </body>
 </html>
