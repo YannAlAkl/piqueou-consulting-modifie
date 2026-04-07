@@ -55,8 +55,6 @@
 //   });
 // });
 
-
-
 // 1. Chargement des traductions
 let translations = {};
  

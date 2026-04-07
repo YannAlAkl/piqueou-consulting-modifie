@@ -1,4 +1,4 @@
-function displayData(results) {
+ function displayData(results) {
     const conteneur = document.getElementById('newsletter-cards');
     if (!conteneur) return;
 
@@ -8,17 +8,40 @@ function displayData(results) {
     }
 
     conteneur.innerHTML = results.map(item => `
-        <div class="col-md-6 col-lg-4">
-            <div class="news-card">
-                <h3>${item.title ?? 'Sans titre'}</h3>
-                <p><strong>${item.type ?? ''}</strong> — ${item.publication_date ?? ''}</p>
-                <p>${item.agencies?.[0]?.name ?? ''}</p>
-                <a href="${item.html_url}" target="_blank" rel="noopener noreferrer">Consulter</a>
-            </div>
-        </div>
-    `).join('');
-}
+    <div class="news-card">
 
+        <div class="news-card-header">
+
+            <div class="news-badge">
+                ${item.cve ?? 'CVE-XXXX'}
+            </div>
+
+            <div class="news-icon">🛡️</div>
+
+            <h4>${item.cve ?? ''}</h4>
+
+        </div>
+
+        <div class="news-card-body">
+
+            <div class="news-meta">
+                <span>${item.agencies?.[0]?.name ?? ''}</span>
+                <span>${item.publication_date ?? ''}</span>
+            </div>
+
+            <h3>${item.title ?? 'Sans titre'}</h3>
+
+            <p>${item.description ?? ''}</p>
+
+            <div class="news-tag">
+                ${item.cwe ?? 'CWE'}
+            </div>
+
+        </div>
+
+    </div>
+`).join('');
+}
 async function loadData() {
     try {
         const response = await fetch('assets/js/newsLetter.json');
