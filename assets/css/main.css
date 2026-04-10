@@ -5675,97 +5675,129 @@ section,
     justify-content: flex-start;
   }
 }
-    .newsletter-filters {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 10px;
-      margin-bottom: 36px;
-      justify-content: center;
-    }
-    .newsletter-filters button {
-      background: transparent;
-      border: 1.5px solid color-mix(in srgb, var(--default-color), transparent 70%);
-      color: var(--default-color);
-      padding: 6px 18px;
-      border-radius: 20px;
-      font-size: 0.82rem;
-      font-weight: 500;
-      cursor: pointer;
-      transition: all 0.2s;
-    }
-    .newsletter-filters button:hover,
-    .newsletter-filters button.active {
-      background: var(--accent-color);
-      border-color: var(--accent-color);
-      color: #fff;
-    }
-    .portfolio .showcase-card .card-image .doc-visual {
-      height: 240px;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      gap: 10px;
-      transition: transform 0.4s ease;
-    }
-    .portfolio .showcase-card .card-image .doc-visual i {
-      font-size: 2.8rem;
-      opacity: 0.75;
-      color: #fff;
-    }
-    .portfolio .showcase-card .card-image .doc-visual .doc-number {
-      font-family: monospace;
-      font-size: 0.85rem;
-      font-weight: 700;
-      color: rgba(255,255,255,0.85);
-      background: rgba(0,0,0,0.25);
-      padding: 4px 12px;
-      border-radius: 6px;
-      letter-spacing: 1px;
-    }
-    @media (max-width: 768px) {
-      .portfolio .showcase-card .card-image .doc-visual { height: 200px; }
-    }
-    .doc-visual.type-rule           { background: linear-gradient(135deg, #1a3a5c 0%, #2d6a9e 100%); }
-    .doc-visual.type-proposed-rule  { background: linear-gradient(135deg, #2d1a5c 0%, #6a2d9e 100%); }
-    .doc-visual.type-notice         { background: linear-gradient(135deg, #1a4a3a 0%, #2d9e6a 100%); }
-    .doc-visual.type-presidential   { background: linear-gradient(135deg, #4a1a1a 0%, #9e2d2d 100%); }
-    .doc-visual.type-other          { background: linear-gradient(135deg, #3a3a1a 0%, #9e8f2d 100%); }
-    .portfolio .showcase-card .card-body .card-read-more {
-      display: inline-flex;
-      align-items: center;
-      gap: 6px;
-      margin-top: 16px;
-      font-size: 0.82rem;
-      font-weight: 600;
-      color: var(--accent-color);
-      text-decoration: none;
-      transition: gap 0.2s;
-    }
-    .portfolio .showcase-card .card-body .card-read-more:hover { gap: 10px; }
-    .newsletter-stats {
-      display: flex;
-      gap: 40px;
-      justify-content: center;
-      flex-wrap: wrap;
-      margin-bottom: 40px;
-    }
-    .newsletter-stats .stat { text-align: center; }
-    .newsletter-stats .stat strong {
-      display: block;
-      font-size: 2rem;
-      font-weight: 700;
-      color: var(--accent-color);
-    }
-    .newsletter-stats .stat span {
-      font-size: 0.82rem;
-      color: color-mix(in srgb, var(--default-color), transparent 40%);
-    }
-    .newsletter-state {
-      text-align: center;
-      padding: 60px 20px;
-      color: color-mix(in srgb, var(--default-color), transparent 40%);
-    }
-    .newsletter-state i { font-size: 3rem; margin-bottom: 16px; display: block; }
+/*--------------------------------------------------------------
+# Newsletter Page
+--------------------------------------------------------------*/
+.newsletter-filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 36px;
+  justify-content: center;
+}
 
-    
+.newsletter-filters button {
+  background: transparent;
+  border: 1.5px solid color-mix(in srgb, var(--default-color), transparent 70%);
+  color: var(--default-color);
+  padding: 6px 18px;
+  border-radius: 20px;
+  font-size: 0.82rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.newsletter-filters button:hover,
+.newsletter-filters button.active {
+  background: var(--accent-color);
+  border-color: var(--accent-color);
+  color: #fff;
+}
+
+.newsletter-stats {
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+}
+
+.newsletter-stats .stat {
+  text-align: center;
+}
+
+.newsletter-stats .stat strong {
+  display: block;
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--accent-color);
+}
+
+.newsletter-stats .stat span {
+  font-size: 0.82rem;
+  color: color-mix(in srgb, var(--default-color), transparent 40%);
+}
+
+.newsletter-state {
+  text-align: center;
+  padding: 60px 20px;
+  color: color-mix(in srgb, var(--default-color), transparent 40%);
+}
+
+.newsletter-state i {
+  font-size: 3rem;
+  margin-bottom: 16px;
+  display: block;
+}
+
+/* Doc-visual gradient banners */
+.portfolio .showcase-card .card-image .doc-visual {
+  height: 240px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  transition: transform 0.4s ease;
+}
+
+.portfolio .showcase-card:hover .card-image .doc-visual {
+  transform: scale(1.03);
+}
+
+.portfolio .showcase-card .card-image .doc-visual i {
+  font-size: 2.8rem;
+  opacity: 0.75;
+  color: #fff;
+}
+
+.portfolio .showcase-card .card-image .doc-visual .doc-number {
+  font-family: monospace;
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: rgba(255, 255, 255, 0.85);
+  background: rgba(0, 0, 0, 0.25);
+  padding: 4px 12px;
+  border-radius: 6px;
+  letter-spacing: 1px;
+}
+
+@media (max-width: 768px) {
+  .portfolio .showcase-card .card-image .doc-visual {
+    height: 200px;
+  }
+}
+
+.doc-visual.type-rule           { background: linear-gradient(135deg, #1a3a5c 0%, #2d6a9e 100%); }
+.doc-visual.type-proposed-rule  { background: linear-gradient(135deg, #2d1a5c 0%, #6a2d9e 100%); }
+.doc-visual.type-notice         { background: linear-gradient(135deg, #1a4a3a 0%, #2d9e6a 100%); }
+.doc-visual.type-presidential   { background: linear-gradient(135deg, #4a1a1a 0%, #9e2d2d 100%); }
+.doc-visual.type-other          { background: linear-gradient(135deg, #3a3a1a 0%, #9e8f2d 100%); }
+
+/* Card read-more link */
+.portfolio .showcase-card .card-body .card-read-more {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  margin-top: 16px;
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: var(--accent-color);
+  text-decoration: none;
+  transition: gap 0.2s;
+}
+
+.portfolio .showcase-card .card-body .card-read-more:hover {
+  gap: 10px;
+}

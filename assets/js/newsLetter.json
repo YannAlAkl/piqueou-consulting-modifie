@@ -1,0 +1,235 @@
+{
+  "count": 20,
+  "results": [
+    {
+      "title": "American AI Exports Program; Call for Proposals for Pre-Set Consortia",
+      "type": "Notice",
+      "abstract": "The Department of Commerce invites proposals for full-stack American AI export packages from industry-led consortia for designation under the American Artificial Intelligence Exports Program established pursuant to Executive Order 14320.",
+      "document_number": "2026-06952",
+      "html_url": "https://www.federalregister.gov/documents/2026/04/10/2026-06952/american-ai-exports-program-call-for-proposals-for-pre-set-consortia",
+      "publication_date": "2026-04-10",
+      "agencies": [
+        { "name": "Commerce Department" },
+        { "name": "International Trade Administration" }
+      ]
+    },
+    {
+      "title": "Prohibition on the Use of Reputation Risk by Regulators",
+      "type": "Rule",
+      "abstract": "The Office of the Comptroller of the Currency and the FDIC adopt a final rule to codify the elimination of reputation risk from their supervisory programs, prohibiting agencies from criticizing institutions or requiring account closures based on reputation risk.",
+      "document_number": "2026-06947",
+      "html_url": "https://www.federalregister.gov/documents/2026/04/10/2026-06947/prohibition-on-the-use-of-reputation-risk-by-regulators",
+      "publication_date": "2026-04-10",
+      "agencies": [
+        { "name": "Treasury Department" },
+        { "name": "Comptroller of the Currency" },
+        { "name": "Federal Deposit Insurance Corporation" }
+      ]
+    },
+    {
+      "title": "Modernizing Suspension and Debarment Rules",
+      "type": "Rule",
+      "abstract": "The Federal Communications Commission adopts the OMB's Guidance for Nonprocurement Debarment and Suspension, along with agency-specific regulations to combat waste, fraud, and abuse, and remove bad actors from participation in its support programs.",
+      "document_number": "2026-06864",
+      "html_url": "https://www.federalregister.gov/documents/2026/04/09/2026-06864/modernizing-suspension-and-debarment-rules",
+      "publication_date": "2026-04-09",
+      "agencies": [
+        { "name": "Federal Communications Commission" }
+      ]
+    },
+    {
+      "title": "Medicare Program; Contract Year 2027 Policy and Technical Changes to Medicare Advantage",
+      "type": "Rule",
+      "abstract": "This final rule revises the Medicare Advantage (Part C), Medicare Prescription Drug Benefit (Part D), and Medicare cost plan regulations to implement changes related to Star Ratings, marketing and communications, drug coverage, and enrollment processes.",
+      "document_number": "2026-06600",
+      "html_url": "https://www.federalregister.gov/documents/2026/04/06/2026-06600/medicare-program-contract-year-2027-and-certain-contract-year-2026-policy-and-technical-changes-to",
+      "publication_date": "2026-04-06",
+      "agencies": [
+        { "name": "Health and Human Services Department" },
+        { "name": "Centers for Medicare & Medicaid Services" }
+      ]
+    },
+    {
+      "title": "Commission Information Collection Activities (FERC-725Z); Extension — IRO Reliability Standards",
+      "type": "Notice",
+      "abstract": "The Federal Energy Regulatory Commission (FERC) is soliciting public comments on the currently approved information collection FERC-725Z (Mandatory Reliability Standards: IRO Reliability Standards). No changes to reporting requirements are proposed.",
+      "document_number": "2026-06204",
+      "html_url": "https://www.federalregister.gov/documents/2026/03/31/2026-06204/commission-information-collection-activities-ferc-725z-comment-request-extension",
+      "publication_date": "2026-03-31",
+      "agencies": [
+        { "name": "Energy Department" },
+        { "name": "Federal Energy Regulatory Commission" }
+      ]
+    },
+    {
+      "title": "Categorical Exclusions From Environmental Review",
+      "type": "Rule",
+      "abstract": "The U.S. Nuclear Regulatory Commission amends its regulations for categorical exclusions for licensing, regulatory, and administrative actions that do not significantly affect the quality of the human environment.",
+      "document_number": "2026-06049",
+      "html_url": "https://www.federalregister.gov/documents/2026/03/30/2026-06049/categorical-exclusions-from-environmental-review",
+      "publication_date": "2026-03-30",
+      "agencies": [
+        { "name": "Nuclear Regulatory Commission" }
+      ]
+    },
+    {
+      "title": "Risk-Informed, Technology-Inclusive Regulatory Framework for Advanced Reactors",
+      "type": "Rule",
+      "abstract": "The NRC adds a risk-informed, performance-based, and technology-inclusive regulatory framework for commercial nuclear plants in response to the Nuclear Energy Innovation and Modernization Act, creating an alternative framework to accommodate advanced reactor designs.",
+      "document_number": "2026-06048",
+      "html_url": "https://www.federalregister.gov/documents/2026/03/30/2026-06048/risk-informed-technology-inclusive-regulatory-framework-for-advanced-reactors",
+      "publication_date": "2026-03-30",
+      "agencies": [
+        { "name": "Nuclear Regulatory Commission" }
+      ]
+    },
+    {
+      "title": "Certain Portable Power Stations and Packaging; Notice of Request for Written Submissions on Commission Exclusion Orders",
+      "type": "Notice",
+      "abstract": "The U.S. International Trade Commission is requesting submissions on whether exclusion orders issued in captioned investigations should be modified or rescinded based on changed conditions of fact or law, or the public interest.",
+      "document_number": "2026-05950",
+      "html_url": "https://www.federalregister.gov/documents/2026/03/27/2026-05950/certain-portable-power-stations-and-packaging-therefor-certain-radio-control-hobby-transmitters-and",
+      "publication_date": "2026-03-27",
+      "agencies": [
+        { "name": "International Trade Commission" }
+      ]
+    },
+    {
+      "title": "Order No. 919; Virtualization Reliability Standards for Critical Infrastructure Protection",
+      "type": "Rule",
+      "abstract": "FERC approves 11 modified Critical Infrastructure Protection (CIP) Reliability Standards and directs NERC to develop criteria for the per system capability exception to enable secure application of virtualization technologies in electric grid operations.",
+      "document_number": "2026-05716",
+      "html_url": "https://www.federalregister.gov/documents/2026/03/24/2026-05716/order-no-919-virtualization-reliability-standards",
+      "publication_date": "2026-03-24",
+      "agencies": [
+        { "name": "Energy Department" },
+        { "name": "Federal Energy Regulatory Commission" }
+      ]
+    },
+    {
+      "title": "Order No. 918; CIP Reliability Standard CIP-003-11 — Cyber Security Management Controls",
+      "type": "Rule",
+      "abstract": "FERC approves CIP Reliability Standard CIP-003-11 (Cyber Security — Security Management Controls), submitted by NERC to mitigate risks posed by coordinated cyberattacks on low-impact electric facilities.",
+      "document_number": "2026-05711",
+      "html_url": "https://www.federalregister.gov/documents/2026/03/24/2026-05711/order-no-918-critical-infrastructure-protection-reliability-standard-cip-003-11-cyber",
+      "publication_date": "2026-03-24",
+      "agencies": [
+        { "name": "Energy Department" },
+        { "name": "Federal Energy Regulatory Commission" }
+      ]
+    },
+    {
+      "title": "Administrative Simplification; Standards for Health Care Claims Attachments and Electronic Signatures",
+      "type": "Rule",
+      "abstract": "This final rule implements HIPAA Administrative Simplification requirements by adopting standards for health care claims attachments transactions and a standard for electronic signatures to be used in conjunction with those transactions.",
+      "document_number": "2026-05676",
+      "html_url": "https://www.federalregister.gov/documents/2026/03/24/2026-05676/administrative-simplification-adoption-of-standards-for-health-care-claims-attachments-transactions",
+      "publication_date": "2026-03-24",
+      "agencies": [
+        { "name": "Health and Human Services Department" }
+      ]
+    },
+    {
+      "title": "Joint Industry Plan; Order Approving Amendment to the Consolidated Audit Trail — Revised Funding Model",
+      "type": "Notice",
+      "abstract": "The SEC approves an amendment to the National Market System Plan governing the Consolidated Audit Trail regarding implementation of a revised funding model.",
+      "document_number": "2026-05350",
+      "html_url": "https://www.federalregister.gov/documents/2026/03/19/2026-05350/joint-industry-plan-order-approving-an-amendment-to-the-national-market-system-plan-governing-the",
+      "publication_date": "2026-03-19",
+      "agencies": [
+        { "name": "Securities and Exchange Commission" }
+      ]
+    },
+    {
+      "title": "Notice of OFAC Sanctions Action — Specially Designated Nationals Update",
+      "type": "Notice",
+      "abstract": "The U.S. Department of the Treasury's Office of Foreign Assets Control (OFAC) publishes the names of persons added to the SDN List. All property and interests subject to U.S. jurisdiction of these persons are blocked, and U.S. persons are generally prohibited from engaging in transactions with them.",
+      "document_number": "2026-04652",
+      "html_url": "https://www.federalregister.gov/documents/2026/03/10/2026-04652/notice-of-ofac-sanctions-action",
+      "publication_date": "2026-03-10",
+      "agencies": [
+        { "name": "Treasury Department" },
+        { "name": "Foreign Assets Control Office" }
+      ]
+    },
+    {
+      "title": "Notice of OFAC Sanctions Action — Blocked Persons List Update (March 2026)",
+      "type": "Notice",
+      "abstract": "OFAC publishes the names of additional persons placed on the Specially Designated Nationals and Blocked Persons List based on OFAC's determination that applicable legal criteria were satisfied.",
+      "document_number": "2026-04217",
+      "html_url": "https://www.federalregister.gov/documents/2026/03/04/2026-04217/notice-of-ofac-sanctions-action",
+      "publication_date": "2026-03-04",
+      "agencies": [
+        { "name": "Treasury Department" },
+        { "name": "Foreign Assets Control Office" }
+      ]
+    },
+    {
+      "title": "Self-Regulatory Organizations; The Options Clearing Corporation — Proposed Rule Change on Collateral and Wrong-Way Risk",
+      "type": "Notice",
+      "abstract": "Notice of filing of a proposed rule change by The Options Clearing Corporation concerning a change in types of acceptable collateral and an update to mitigate wrong-way risk.",
+      "document_number": "2026-03915",
+      "html_url": "https://www.federalregister.gov/documents/2026/02/27/2026-03915/self-regulatory-organizations-the-options-clearing-corporation-notice-of-filing-of-proposed-rule",
+      "publication_date": "2026-02-27",
+      "agencies": [
+        { "name": "Securities and Exchange Commission" }
+      ]
+    },
+    {
+      "title": "Unlicensed Use of the 6 GHz Band; Geofenced Variable Power Devices",
+      "type": "Rule",
+      "abstract": "The FCC adopts rules allowing unlicensed geofenced variable power devices to operate in the U-NII-5 and U-NII-7 portions of the 6 GHz band at up to 11 dBm/MHz EIRP. Devices must use geofencing systems to prevent harmful interference to licensed microwave links.",
+      "document_number": "2026-03744",
+      "html_url": "https://www.federalregister.gov/documents/2026/02/25/2026-03744/unlicensed-use-of-the-6-ghz-band-expanding-flexible-use-in-mid-band-spectrum-between-37-and-24-ghz",
+      "publication_date": "2026-02-25",
+      "agencies": [
+        { "name": "Federal Communications Commission" }
+      ]
+    },
+    {
+      "title": "Commission Information Collection Activities (FERC-725B); Critical Infrastructure Protection Reliability Standards",
+      "type": "Notice",
+      "abstract": "FERC is soliciting public comment on the currently approved information collection FERC-725B covering Mandatory Reliability Standards for Critical Infrastructure Protection (CIP), in compliance with the Paperwork Reduction Act of 1995.",
+      "document_number": "2026-03007",
+      "html_url": "https://www.federalregister.gov/documents/2026/02/17/2026-03007/commission-information-collection-activities-ferc-725b-comment-request-extension",
+      "publication_date": "2026-02-17",
+      "agencies": [
+        { "name": "Energy Department" },
+        { "name": "Federal Energy Regulatory Commission" }
+      ]
+    },
+    {
+      "title": "Adoption of Recommendations — ACUS Eighty-Fourth Plenary Session",
+      "type": "Notice",
+      "abstract": "The Administrative Conference of the United States adopted four recommendations at the Eighty-fourth Plenary Session: Obtaining Government Records for Use in Agency Proceedings; Temporary Rules; Organization and Management of Agency Adjudication Offices; and Federal Agency Collaboration with State, Tribal, Local, and Territorial Governments.",
+      "document_number": "2026-02753",
+      "html_url": "https://www.federalregister.gov/documents/2026/02/11/2026-02753/adoption-of-recommendations",
+      "publication_date": "2026-02-11",
+      "agencies": [
+        { "name": "Administrative Conference of the United States" }
+      ]
+    },
+    {
+      "title": "Information Collections Being Reviewed by the Federal Communications Commission",
+      "type": "Notice",
+      "abstract": "As part of its continuing effort to reduce paperwork burdens under the Paperwork Reduction Act, the FCC invites public and agency comments on proposed information collections, including assessments of practical utility, accuracy of burden estimates, and ways to minimize collection burden.",
+      "document_number": "2026-02545",
+      "html_url": "https://www.federalregister.gov/documents/2026/02/10/2026-02545/information-collections-being-reviewed-by-the-federal-communications-commission",
+      "publication_date": "2026-02-10",
+      "agencies": [
+        { "name": "Federal Communications Commission" }
+      ]
+    },
+    {
+      "title": "Proposed Rule: Cybersecurity Requirements for Covered Entities — Critical Infrastructure Protection Update",
+      "type": "Proposed Rule",
+      "abstract": "This proposed rule would establish updated minimum cybersecurity requirements for covered critical infrastructure entities, including requirements for incident reporting, vulnerability disclosure, access control, and supply chain risk management aligned with NIST CSF 2.0.",
+      "document_number": "2026-01999",
+      "html_url": "https://www.federalregister.gov/",
+      "publication_date": "2026-02-01",
+      "agencies": [
+        { "name": "Cybersecurity and Infrastructure Security Agency" }
+      ]
+    }
+  ]
+}
