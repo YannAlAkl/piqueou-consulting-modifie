@@ -4,9 +4,9 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>InfoLettre - Piqueou Consulting</title>
-  <meta name="description" content="">
-  <meta name="keywords" content="">
+  <title>InfoLettre — Piqueou Consulting</title>
+  <meta name="description" content="Veille réglementaire en cybersécurité, conformité et gouvernance numérique — Piqueou Consulting.">
+  <meta name="keywords" content="cybersécurité, conformité, CMMC, ISO 27001, Federal Register, réglementation">
 
   <!-- Favicons -->
   <link href="assets/img/favicon.png" rel="icon">
@@ -15,17 +15,14 @@
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com" rel="preconnect">
   <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Poppins:wght@300;400;500;600;700&family=Raleway:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
-  <!-- Vendor CSS Files -->
+  <!-- Vendor CSS -->
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
   <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
- 
 
-  <!-- Main CSS File -->
+  <!-- Main CSS -->
   <link href="assets/css/main.css" rel="stylesheet">
 </head>
 
@@ -38,7 +35,7 @@
         <span class="sitename">Piqueou <span>Consulting</span></span>
       </a>
 
-            <nav id="navmenu" class="navmenu">
+      <nav id="navmenu" class="navmenu">
         <ul>
           <li><a href="index.html" data-i18n="nav.home">Accueil</a></li>
           <li><a href="index.html#about" data-i18n="nav.about">À propos</a></li>
@@ -74,7 +71,7 @@
   <main class="main">
 
     <!-- Page Title -->
-    <div class="page-title position-relative" style="background-color: #0f172a; color: #ffffff;">
+    <div class="page-title" style="background-color: #0f172a; color: #ffffff;">
       <div class="heading">
         <div class="container">
           <div class="row d-flex justify-content-center text-center">
@@ -90,33 +87,33 @@
       <nav class="breadcrumbs">
         <div class="container">
           <ol>
-            <li><a href="index.html" style="color: #ffffff !important;" data-i18n="nav.home">Accueil</a></li>
+            <li><a href="index.html" style="color: #ffffffcc;" data-i18n="nav.home">Accueil</a></li>
             <li class="current" style="color: #ffffff;" data-i18n="nav.newslettre">InfoLettre</li>
           </ol>
         </div>
       </nav>
-    </div>
+    </div><!-- /Page Title -->
 
     <!-- Newsletter Section -->
-    <section id="newsletter" class="portfolio section scrollingsections">
+    <section id="newsletter" class="portfolio section">
       <div class="container" data-aos="fade-up" data-aos-delay="100">
 
         <!-- Stats bar -->
-        <div id="newsletter-stats" class="newsletter-stats" data-aos="fade-up" data-aos-delay="150"></div>
+        <div id="newsletter-stats" class="newsletter-stats" data-aos="fade-up" data-aos-delay="120"></div>
 
         <!-- Filter buttons -->
-        <div id="newsletter-filters" class="newsletter-filters" data-aos="fade-up" data-aos-delay="200"></div>
+        <div id="newsletter-filters" class="newsletter-filters" data-aos="fade-up" data-aos-delay="160"></div>
 
         <!-- Cards grid -->
-        <div id="newsletter-cards" class="row gy-4" data-aos="fade-up" data-aos-delay="250">
-          <div class="newsletter-state">
+        <div id="newsletter-cards" class="row gy-4" data-aos="fade-up" data-aos-delay="200">
+          <div class="newsletter-state col-12">
             <i class="bi bi-arrow-clockwise"></i>
             <p data-i18n="newsletter.loading">Chargement des actualités…</p>
           </div>
         </div>
 
       </div>
-    </section>
+    </section><!-- /Newsletter Section -->
 
   </main>
 
@@ -157,179 +154,13 @@
   <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
   <div id="preloader"></div>
 
-  <!-- Vendor JS Files -->
+  <!-- Vendor JS -->
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
   <script src="assets/vendor/aos/aos.js"></script>
   <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
-  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
   <script src="assets/js/main.js"></script>
   <script src="assets/js/language.js"></script>
-   <script src="assets/js/api.js" defer></script>
-
-  <script>
-  (function () {
-
-    var TYPE_ICONS = {
-      'Rule':                   'bi-file-earmark-ruled',
-      'Proposed Rule':          'bi-file-earmark-text',
-      'Notice':                 'bi-bell',
-      'Presidential Document':  'bi-building',
-    };
-    var TYPE_CSS = {
-      'Rule':                   'type-rule',
-      'Proposed Rule':          'type-proposed-rule',
-      'Notice':                 'type-notice',
-      'Presidential Document':  'type-presidential',
-    };
-    var LABELS = {
-      'fr': {
-        'Rule': 'Règle', 'Proposed Rule': 'Règle proposée',
-        'Notice': 'Avis', 'Presidential Document': 'Document présidentiel',
-        'All': 'Tout', 'read_more': 'Lire le document', 'source': 'Federal Register',
-        'total': 'Publications', 'types': 'Types', 'agencies': 'Agences',
-        'no_results': 'Aucun résultat pour ce filtre.',
-        'error': 'Erreur lors du chargement des actualités.',
-      },
-      'en': {
-        'Rule': 'Rule', 'Proposed Rule': 'Proposed Rule',
-        'Notice': 'Notice', 'Presidential Document': 'Presidential Document',
-        'All': 'All', 'read_more': 'Read document', 'source': 'Federal Register',
-        'total': 'Publications', 'types': 'Types', 'agencies': 'Agencies',
-        'no_results': 'No results for this filter.',
-        'error': 'Error loading newsletter.',
-      }
-    };
-
-    function getLang() {
-      return localStorage.getItem('piqueou-lang') === 'en' ? 'en' : 'fr';
-    }
-    function t(key) {
-      var l = getLang();
-      return (LABELS[l] && LABELS[l][key]) || LABELS.fr[key] || key;
-    }
-    function truncate(str, max) {
-      if (!str) return '';
-      return str.length > max ? str.slice(0, max) + '\u2026' : str;
-    }
-    function agencyName(doc) {
-      return (doc.agencies && doc.agencies.length) ? doc.agencies[0].name : t('source');
-    }
-
-    function renderCard(doc) {
-      var typeClass = TYPE_CSS[doc.type]  || 'type-other';
-      var typeIcon  = TYPE_ICONS[doc.type] || 'bi-file-earmark';
-      var typeLabel = t(doc.type) || doc.type;
-      return (
-        '<div class="col-lg-4 col-md-6" data-type="' + (doc.type || '') + '">' +
-          '<article class="showcase-card">' +
-            '<div class="card-image">' +
-              '<div class="doc-visual ' + typeClass + '">' +
-                '<i class="bi ' + typeIcon + '"></i>' +
-                '<span class="doc-number">' + (doc.document_number || '') + '</span>' +
-              '</div>' +
-              '<span class="card-badge">' + typeLabel + '</span>' +
-            '</div>' +
-            '<div class="card-body">' +
-              '<div class="card-meta">' +
-                '<span class="meta-client"><i class="bi bi-building"></i> ' + truncate(agencyName(doc), 40) + '</span>' +
-                '<span class="meta-date">' + (doc.publication_date || '') + '</span>' +
-              '</div>' +
-              '<h3 class="card-title">' + truncate(doc.title, 100) + '</h3>' +
-              '<p class="card-text">' + truncate(doc.abstract, 200) + '</p>' +
-              '<div class="card-tags">' +
-                '<span class="tag">' + t('source') + '</span>' +
-                (doc.type ? '<span class="tag">' + typeLabel + '</span>' : '') +
-              '</div>' +
-              '<a href="' + (doc.html_url || '#') + '" target="_blank" rel="noopener" class="card-read-more">' +
-                t('read_more') + ' <i class="bi bi-arrow-right"></i>' +
-              '</a>' +
-            '</div>' +
-          '</article>' +
-        '</div>'
-      );
-    }
-
-    var allResults = [];
-    var activeType = '';
-
-    function applyFilter(filter) {
-      activeType = filter;
-      renderFilters();
-      renderCards();
-    }
-
-    function renderStats() {
-      var el = document.getElementById('newsletter-stats');
-      if (!el) return;
-      var types = {}, agencies = {};
-      allResults.forEach(function (r) {
-        types[r.type] = 1;
-        agencies[agencyName(r)] = 1;
-      });
-      el.innerHTML =
-        '<div class="stat"><strong>' + allResults.length + '</strong><span>' + t('total') + '</span></div>' +
-        '<div class="stat"><strong>' + Object.keys(types).length + '</strong><span>' + t('types') + '</span></div>' +
-        '<div class="stat"><strong>' + Object.keys(agencies).length + '</strong><span>' + t('agencies') + '</span></div>';
-    }
-
-    function renderFilters() {
-      var bar = document.getElementById('newsletter-filters');
-      if (!bar) return;
-      var types = [];
-      allResults.forEach(function (r) { if (r.type && types.indexOf(r.type) === -1) types.push(r.type); });
-      bar.innerHTML =
-        '<button class="' + (activeType === '' ? 'active' : '') + '" data-filter="">' + t('All') + '</button>' +
-        types.map(function (tp) {
-          return '<button class="' + (activeType === tp ? 'active' : '') + '" data-filter="' + tp + '">' + (t(tp) || tp) + '</button>';
-        }).join('');
-      bar.querySelectorAll('button').forEach(function (btn) {
-        btn.addEventListener('click', function () { applyFilter(btn.getAttribute('data-filter')); });
-      });
-    }
-
-    function renderCards() {
-      var container = document.getElementById('newsletter-cards');
-      if (!container) return;
-      var filtered = activeType ? allResults.filter(function (r) { return r.type === activeType; }) : allResults;
-      if (!filtered.length) {
-        container.innerHTML = '<div class="newsletter-state col-12"><i class="bi bi-inbox"></i><p>' + t('no_results') + '</p></div>';
-        return;
-      }
-      container.innerHTML = filtered.map(renderCard).join('');
-      if (window.AOS) AOS.refresh();
-    }
-
-    fetch('assets/js/newsLetter.json')
-      .then(function (res) { return res.json(); })
-      .then(function (data) {
-        allResults = data.results || [];
-        renderStats();
-        renderFilters();
-        renderCards();
-      })
-      .catch(function () {
-        var c = document.getElementById('newsletter-cards');
-        if (c) c.innerHTML = '<div class="newsletter-state col-12"><i class="bi bi-exclamation-circle"></i><p>' + t('error') + '</p></div>';
-      });
-
-    // Re-render labels when language switches
-    document.addEventListener('click', function (e) {
-      var btn = e.target.closest && e.target.closest('.lang-switcher [data-lang]');
-      if (btn && allResults.length) {
-        setTimeout(function () {
-          renderStats();
-          renderFilters();
-          renderCards();
-        }, 120);
-      }
-    });
-
-  })();
-  </script>
+  <script src="assets/js/newsletter.js"></script>
 
 </body>
 </html>
