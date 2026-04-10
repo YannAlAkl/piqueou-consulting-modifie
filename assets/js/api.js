@@ -44,7 +44,7 @@
 }
 async function loadData() {
     try {
-        const response = await fetch('assets/js/newsLetter.json');
+        const response = await fetch('https://www.federalregister.gov/api/v1/documents.json?conditions[term]=Cybersecurity%20Maturity%20Model%20Certification&order=newest');
         if (!response.ok) throw new Error(`HTTP ${response.status}`);
         const data = await response.json();
         displayData(data.results);
