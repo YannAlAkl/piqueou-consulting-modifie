@@ -1,73 +1,74 @@
-<x-guest-layout>
-    <form method="POST" action="{{ route('register') }}">
+<body>
+
+<div class="form-container">
+    <div class="form-header">
+        <h2>Créer un compte professionnel</h2>
+    </div>
+
+    <form action="/register" method="POST">
         @csrf
+        <div class="form-grid">
 
-        <!-- Prénom & Nom -->
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-            <div>
-                <x-input-label for="first_name" :value="__('First Name')" />
-                <x-text-input id="first_name" class="block mt-1 w-full" type="text" name="first_name" :value="old('first_name')" required autofocus autocomplete="first_name" placeholder="John" />
-                <x-input-error :messages="$errors->get('first_name')" class="mt-2" />
+            <!-- first_name (NOT NULL) -->
+            <div class="form-group">
+                <label for="first_name">Prénom *</label>
+                <input type="text" id="first_name" name="first_name" required maxlength="255">
             </div>
 
-            <div>
-                <x-input-label for="last_name" :value="__('Last Name')" />
-                <x-text-input id="last_name" class="block mt-1 w-full" type="text" name="last_name" :value="old('last_name')" required autocomplete="last_name" placeholder="Doe" />
-                <x-input-error :messages="$errors->get('last_name')" class="mt-2" />
+            <!-- last_name (NULL) -->
+            <div class="form-group">
+                <label for="last_name">Nom</label>
+                <input type="text" id="last_name" name="last_name" maxlength="255">
             </div>
 
-        <!-- Email professionnel -->
-        <div class="mt-4">
-            <x-input-label for="email" :value="__('Professional Email')" />
-            <x-text-input id="email" class="block mt-1 w-full" type="email" name="email" :value="old('email')" required autocomplete="username" placeholder="john.doe@entreprise.com" />
-            <x-input-error :messages="$errors->get('email')" class="mt-2" />
-            <p class="text-xs text-gray-500 mt-1">{{ __('Only professional email addresses are accepted. Personal emails (Gmail, Hotmail, Yahoo, etc.) are not allowed.') }}</p>
-        </div>
-
-        <!-- Entreprise & Téléphone -->
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
-            <div>
-                <x-input-label for="company_name" :value="__('Company Name')" />
-                <x-text-input id="company_name" class="block mt-1 w-full" type="text" name="company_name" :value="old('company_name')" autocomplete="organization" placeholder="Acme Inc." />
-                <x-input-error :messages="$errors->get('company_name')" class="mt-2" />
+            <!-- email (NOT NULL) -->
+            <div class="form-group full-width">
+                <label for="email">Adresse e-mail *</label>
+                <input type="email" id="email" name="email" required maxlength="255">
             </div>
 
-            <div>
-                <x-input-label for="phone" :value="__('Phone')" />
-                <x-text-input id="phone" class="block mt-1 w-full" type="tel" name="phone" :value="old('phone')" autocomplete="tel" placeholder="+1 234 567 890" />
-                <x-input-error :messages="$errors->get('phone')" class="mt-2" />
+            <!-- password (NOT NULL) -->
+            <div class="form-group full-width">
+                <label for="password">Mot de passe *</label>
+                <input type="password" id="password" name="password" required maxlength="255">
             </div>
 
-        <!-- Mot de passe -->
-        <div class="mt-4">
-            <x-input-label for="password" :value="__('Password')" />
-            <x-text-input id="password" class="block mt-1 w-full"
-                            type="password"
-                            name="password"
-                            required autocomplete="new-password"
-                            placeholder="••••••••" />
-            <x-input-error :messages="$errors->get('password')" class="mt-2" />
-        </div>
+            <!-- company_name (NULL) -->
+            <div class="form-group">
+                <label for="company_name">Nom de l'entreprise</label>
+                <input type="text" id="company_name" name="company_name" maxlength="255">
+            </div>
 
-        <!-- Confirmation du mot de passe -->
-        <div class="mt-4">
-            <x-input-label for="password_confirmation" :value="__('Confirm Password')" />
-            <x-text-input id="password_confirmation" class="block mt-1 w-full"
-                            type="password"
-                            name="password_confirmation"
-                            required autocomplete="new-password"
-                            placeholder="••••••••" />
-            <x-input-error :messages="$errors->get('password_confirmation')" class="mt-2" />
-        </div>
+            <!-- phone (NULL) -->
+            <div class="form-group">
+                <label for="phone">Téléphone</label>
+                <input type="tel" id="phone" name="phone" maxlength="30">
+            </div>
 
-        <div class="flex items-center justify-end mt-4">
-            <a class="underline text-sm text-gray-600 hover:text-gray-900 rounded-md focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500" href="{{ route('login') }}">
-                {{ __('Already registered?') }}
-            </a>
+            <!-- wants_newsletter (tinyint - default 0) -->
+            <div class="form-group full-width checkbox-group">
+                <input type="hidden" name="wants_newsletter" value="0">
+                <input type="checkbox" id="wants_newsletter" name="wants_newsletter" value="1">
+                <label for="wants_newsletter">S'abonner à la newsletter</label>
+            </div>
 
-            <x-primary-button class="ms-4">
-                {{ __('Register') }}
-            </x-primary-button>
-        </div>
+            <!-- newsletter_category (NULL) -->
+            <div class="form-group full-width">
+                <label for="newsletter_category">Catégorie de newsletter</label>
+                <select id="newsletter_category" name="newsletter_category">
+                    <option value="" selected>-- Choisir une catégorie --</option>
+                    <option value="tech">Actualités Tech</option>
+                    <option value="business">Business & Stratégie</option>
+                    <option value="offers">Offres promotionnelles</option>
+                </select>
+            </div>
+
+            <!-- Bouton de soumission -->
+            <div class="form-group full-width">
+                <button type="submit" class="submit-btn">S'inscrire</button>
+            </div>
     </form>
-</x-guest-layout>
+</div>
+
+</body>
+</html>

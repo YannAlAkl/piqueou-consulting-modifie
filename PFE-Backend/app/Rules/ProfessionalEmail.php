@@ -13,8 +13,6 @@ class ProfessionalEmail implements ValidationRule
      *
      * @param  Closure(string, ?string=): PotentiallyTranslatedString  $fail
      */
-    class ProfessionalEmail implements validationRule
-    {
         protected array $blockedDomains = [
         'gmail.com', 'googlemail.com',
         'hotmail.com', 'hotmail.fr', 'outlook.com', 'outlook.fr', 'live.com', 'live.fr', 'msn.com',
@@ -39,4 +37,4 @@ class ProfessionalEmail implements ValidationRule
         }
 
     }
-}
+
