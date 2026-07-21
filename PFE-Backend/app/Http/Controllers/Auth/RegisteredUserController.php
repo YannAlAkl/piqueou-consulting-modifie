@@ -30,17 +30,30 @@ class RegisteredUserController extends Controller
      */
     public function store(Request $request): RedirectResponse
     {
+        if ($request->has('role') || $request->has('role_id')) {
+            abort(403,'Non autorisé');
+        }
         $request->validate([
-            'name' => ['required', 'string', 'max:255'],
-            'email' => ['required', 'string', 'lowercase', 'email', 'max:255', 'unique:'.User::class],
-            'password' => ['required', 'confirmed', Rules\Password::defaults()],
+            'first_name'=>['required','string' , 'max:255'],
+            'last_name'=>['required','nullable', 'string', 'max:255'],
+            'email'=>['required', 'string', 'email', 'max:255', 'unique:'.User::class, new ProfessionalEmail],
+            'password'=>['required', 'confirmed', Rules\Password::defaults()],
+            'company_name'=>['nullable', 'string', 'max:255'],
+            'phone'=>['nullable', 'string', 'max:30'],
         ]);
 
         $user = User::create([
-            'name' => $request->name,
+            'first_name' => $request->first_name,
+            'last_name' => $request->last_name,
             'email' => $request->email,
-            'password' => Hash::make($request->password),
+            'password'=> hash::make($request->password),
+            'company_name'=> $request->company_name,
+            'phone'=> $request->phone,
+            'account_status' => 'pending'
+
         ]);
+
+        $user->assignRole('client');
 
         event(new Registered($user));
 
