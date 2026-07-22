@@ -11,7 +11,7 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
 
-#[Fillable(['name', 'email', 'password'])]
+#[Fillable(['first_name', 'last_name', 'email', 'password', 'company_name', 'phone', 'account_status', 'activated_at', 'wants_newsletter', 'newsletter_category'])]
 #[Hidden(['password', 'remember_token'])]
 class User extends Authenticatable implements MustVerifyEmail
 {
@@ -24,22 +24,42 @@ class User extends Authenticatable implements MustVerifyEmail
      * @return array<string, string>
      */
     protected $fillable = [
-        'firstanme_name','last_name','email', 'password','company_name','phone','account_status','activated_at','wants_newsletter','newsletter_category'
-
+        'first_name',
+        'last_name',
+        'email',
+        'password',
+        'company_name',
+        'phone',
+        'account_status',
+        'activated_at',
+        'wants_newsletter',
+        'newsletter_category'
     ];
 
-    protected $hidden= ['password', 'remember_token'];
-    public function roles(){
+    protected $hidden = ['password', 'remember_token'];
+
+    public function roles()
+    {
         return $this->belongsToMany(Role::class);
     }
 
-    public function role():Role{
-
+    public function role(): ?Role
+    {
         return $this->roles()->first();
     }
+
+    public function assignRole(string $roleName): self
+    {
+        $role = Role::firstOrCreate(['name' => $roleName]);
+
+        $this->roles()->syncWithoutDetaching([$role->id]);
+
+        return $this;
+    }
+
     public function hasRole(string $roleName): bool
     {
-        return $this->role()->name === $roleName;
+        return $this->roles()->where('name', $roleName)->exists();
     }
 
 }

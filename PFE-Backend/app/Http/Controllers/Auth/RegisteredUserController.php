@@ -32,23 +32,26 @@ class RegisteredUserController extends Controller
     {
        
         $request->validate([
-            'first_name'=>['required','string' , 'max:255'],
-            'last_name'=>['required','nullable', 'string', 'max:255'],
-            'email'=>['required', 'string', 'email', 'max:255', 'unique:'.User::class, new ProfessionalEmail],
-            'password'=>['required', 'confirmed', Rules\Password::defaults()],
-            'company_name'=>['nullable', 'string', 'max:255'],
-            'phone'=>['nullable', 'string', 'max:30'],
+            'first_name' => ['required', 'string', 'max:255'],
+            'last_name' => ['nullable', 'string', 'max:255'],
+            'email' => ['required', 'string', 'email', 'max:255', 'unique:' . User::class],
+            'password' => ['required', 'confirmed', Rules\Password::min(8)],
+            'company_name' => ['nullable', 'string', 'max:255'],
+            'phone' => ['nullable', 'string', 'max:30'],
+            'wants_newsletter' => ['nullable', 'boolean'],
+            'newsletter_category' => ['nullable', 'string', 'max:100'],
         ]);
 
         $user = User::create([
             'first_name' => $request->first_name,
             'last_name' => $request->last_name,
             'email' => $request->email,
-            'password'=> hash::make($request->password),
-            'company_name'=> $request->company_name,
-            'phone'=> $request->phone,
-            'account_status' => 'pending'
-
+            'password' => Hash::make($request->password),
+            'company_name' => $request->company_name,
+            'phone' => $request->phone,
+            'account_status' => 'pending',
+            'wants_newsletter' => $request->boolean('wants_newsletter'),
+            'newsletter_category' => $request->newsletter_category,
         ]);
 
         $user->assignRole('client');
@@ -57,6 +60,6 @@ class RegisteredUserController extends Controller
 
         Auth::login($user);
 
-        return redirect(route('dashboard', absolute: false));
+        return redirect('/');
     }
 }
